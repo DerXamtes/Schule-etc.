@@ -4,13 +4,14 @@ public class Name {
   
   public static void main(String[] args) {
     
+    Scanner sc = new Scanner(System.in);
+
     System.out.println("Wie heist du?");
     
-    Scanner s = new Scanner(System.in);
+    String Name = sc.next(); 
     
-    String Name = s.next(); 
-    
-    System.out.println("Hallo "+Name+"!");
+    System.out.println("Hallo " + Name + "!");
+ 
   }
   
 }

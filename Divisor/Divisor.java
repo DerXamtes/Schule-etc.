@@ -5,6 +5,7 @@ import java.lang.Math;
 public class Divisor {
   
   public static void main(String[] args) {
+    
     Scanner sc = new Scanner(System.in);
     
     System.out.println("Bitte geben Sie den Dividend =/>1 ein. Beispiel: 7,8");
