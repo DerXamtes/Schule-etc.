@@ -6,12 +6,12 @@ public class Clueless {
     
     Scanner sc = new Scanner(System.in);
     
-    System.out.println("Alle Angaben bitte in Centimeter");
+    System.out.println("Bitte geben Sie die Breite und Länge ein");
     
-    System.out.print("a=");
+    System.out.print("Breite = ");
     double a = sc.nextDouble();
     
-    System.out.print("b=");
+    System.out.print("Länge = ");
     double b = sc.nextDouble();
     
     double c = 2*a+2*b;
