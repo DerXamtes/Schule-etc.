@@ -1,0 +1,9 @@
+public class Hello World {
+    
+    public public static void mein(String[] args) {
+
+        System.out.println("Hello, World!")
+        
+    }
+
+}
