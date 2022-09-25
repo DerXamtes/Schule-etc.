@@ -3,22 +3,21 @@ import java.util.Scanner;
 public class Clueless {
   
   public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
     
     System.out.println("Alle Angaben bitte in Centimeter");
     
     System.out.print("a=");
-    Scanner a = new Scanner (System.in);
-    double erste_seite = a.nextDouble();
+    double a = sc.nextDouble();
     
     System.out.print("b=");
-    Scanner b = new Scanner (System.in);
-    double zweite_seite = b.nextDouble();
+    double b = sc.nextDouble();
     
-    double c = 2*erste_seite+2*zweite_seite;
+    double c = 2*a+2*b;
     System.out.println("Umfang:"+c);
     
-    double d = erste_seite*zweite_seite;
-    System.out.println("Flaeche:"+d);
+    double d = a*b;
+    System.out.println("Fläche:"+d);
     
   } 
 
