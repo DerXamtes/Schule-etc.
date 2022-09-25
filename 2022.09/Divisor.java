@@ -32,9 +32,9 @@ public class Divisor {
           System.out.println("Das Ergebnis ist " + b/d + " Rest: " + Math.ceil(e)/10);
           System.out.println("Ohne Rest ist das Ergebnis: " + df.format(f)); 
       
-      System.out.println();
-      System.out.println("Um noch eine Aufgabe lösen zu lassen, geben Sie einen Divident >=1 ein.");
-      System.out.println("Um das Programm zu schliesen geben Sie 0 ein.");
+          System.out.println();
+          System.out.println("Um noch eine Aufgabe lösen zu lassen, geben Sie einen Divident >=1 ein.");
+          System.out.println("Um das Programm zu schliesen geben Sie 0 ein.");
 
         } else {
       
