@@ -22,31 +22,26 @@ public class Dividierer {
         if (a >= 1) {
     
           System.out.println("Bitte geben Sie einen Divisor >=1 ein.");
-
           double c = sc.nextDouble();
           int d = (int) c;
         
-          double e = a%c*10;
-          double f = a/c;
-        
-          System.out.println("Das Ergebnis ist " + b/d + " Rest: " + Math.ceil(e)/10);
-          System.out.println("Ohne Rest ist das Ergebnis: " + df.format(f)); 
-      
+          System.out.println("Das Ergebnis ist " + b/d + " Rest: " + Math.ceil(a%c*10)/10);
+          System.out.println("Ohne Rest ist das Ergebnis: " + df.format(a/c)); 
           System.out.println();
           System.out.println("Um noch eine Aufgabe lösen zu lassen, geben Sie einen Divident >=1 ein.");
           System.out.println("Um das Programm zu schliesen geben Sie 0 ein.");
 
         } else {
-      
+
           System.out.println("Danke für das Verwenden des Programms :)");
           break;
-
+      
       }
     
     }
     
     sc.close();
-
+  
   } 
 
 }
