@@ -20,6 +20,8 @@ public class Clueless {
     double d = a*b;
     System.out.println("Fläche:" + d);
     
+    sc.close();
+
   } 
 
 } 

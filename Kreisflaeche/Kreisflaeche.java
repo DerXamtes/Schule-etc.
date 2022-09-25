@@ -11,6 +11,8 @@ public class Kreisflaeche {
     
     double b = a*a*3.14;
     System.out.print("Die Fläche betraegt " + b + "cm2");
+
+    sc.close();
   
   } 
 

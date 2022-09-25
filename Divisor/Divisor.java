@@ -20,6 +20,9 @@ public class Divisor {
     
     System.out.println("Das Ergebnis ist " + b/d + " Rest: " + Math.ceil(e)/10);
     System.out.println("Ohne Rest ist das Ergebnis: " + a/c); 
+
+    sc.close();
+
   } 
 
 }

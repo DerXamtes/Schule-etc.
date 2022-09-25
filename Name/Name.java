@@ -11,6 +11,8 @@ public class Name {
     String Name = sc.next(); 
     
     System.out.println("Hallo " + Name + "!");
+
+    sc.close();
  
   }
   
