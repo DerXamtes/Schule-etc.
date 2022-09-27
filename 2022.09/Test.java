@@ -1,14 +1,30 @@
 import java.util.Scanner;
 
-public class Test {
-    public static void main(String[] args) {
+public class Test{
 
-        Scanner sc = new Scanner(System.in);    
-        
-        System.out.println("Hello :)");
+  public static void main(String[] args) {
 
-        sc.close();
-        
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("Hallo!");
+
+    while(true) {
+
+      double a = sc.nextDouble();
+
+        if (a >= 1) {
+
+          System.out.println(a);
+
+        } else {
+
+          break;
+
+      }
+
     }
+
+    sc.close();
     
+  }
 }
