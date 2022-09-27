@@ -8,14 +8,14 @@ public class Huehnerhof {
         
         System.out.println("Bitte geben sie die anzahl der Hühner ein.");
 
-        double a = sc.nextDouble();
+        int a = sc.nextInt();
 
         System.out.println("Bitte geben sie die Anzahl der Tage ein");
 
-        Double b = sc.nextDouble();
+        int b = sc.nextInt();
 
         System.out.println(a + " Hühner legen an " + b + " Tagen: " + a*b*5.6/7 + " Eier.");
-        System.out.println("Dafür brauchen sie " + a*b*130/1000 + " Kilo Futter");
+        System.out.println("Dafür brauchen sie " + a*b*130.0/1000 + " Kilo Futter");
 
         sc.close();
         
