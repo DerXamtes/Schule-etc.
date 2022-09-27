@@ -1,5 +1,17 @@
 import java.util.Scanner;
 
+/*
+Willkommen beim Treibstoffverbrauchsrechner
+
+*******************************************
+
+Anzahl der LKWs eingeben eingeben: 1
+
+Anzahl der Tage eingeben: 1
+
+Der verbrauch beträgt: 157,5 Liter 
+*/
+
 public class Treibstoffverbrauch {
     public static void main(String[] args) {
         
