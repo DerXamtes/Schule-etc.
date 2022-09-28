@@ -1,30 +1,21 @@
 import java.util.Scanner;
 
-public class Test{
+public class Test {
+    public static void main(String... args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
 
-  public static void main(String[] args) {
+        int a;
+        System.out.print("Enter number 1: ");
+        while (true)
+            try {
+                a = Integer.parseInt(sc.nextLine());
+                break;
+            } catch (NumberFormatException nfe) {
+                System.out.print("Try again: ");
+            }
 
-      Scanner sc = new Scanner(System.in);
-
-      System.out.println("Hallo!");
-
-    while(true) {
-
-      double a = sc.nextDouble();
-
-        if (a >= 1) {
-
-          System.out.println(a);
-
-        } else {
-
-          break;
-
-      }
-
+      sc.close();
+    
     }
 
-    sc.close();
-    
   }
-}
