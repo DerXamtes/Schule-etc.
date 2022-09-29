@@ -4,7 +4,6 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 public class Dividierer {
-  
   public static void main(String[] args) {
 
       Scanner sc = new Scanner(System.in);
