@@ -1,4 +1,5 @@
-import java.util.Scanner;;
+import java.util.Scanner;
+import java.lang.Math;
 
 public class Huehnerhof {
 
@@ -14,7 +15,7 @@ public class Huehnerhof {
 
         int b = sc.nextInt();
 
-        System.out.println(a + " Hühner legen an " + b + " Tagen: " + a*b*5.6/7 + " Eier.");
+        System.out.println(a + " Hühner legen an " + b + " Tagen: " + Math.round(a*b*5.6/7) + " Eier.");
         System.out.println("Dafür brauchen sie " + a*b*130.0/1000 + " Kilo Futter");
 
         sc.close();
