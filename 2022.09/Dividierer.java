@@ -32,7 +32,7 @@ public class Dividierer {
 
           } else {
 
-            System.out.println("Danke für's Verwenden des Programms :)");
+            System.out.println("Danke für's Verwenden :)");
             break;
       
         }
