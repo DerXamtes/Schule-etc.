@@ -10,7 +10,7 @@ public class Huehnerhof_2 {
        
         while (!sc.hasNextInt()) {
             
-            System.out.println("Bitte geben Sie die Anzahl ohne nachkommastellen ein. ");
+            System.out.println("Bitte geben Sie die Anzahl ohne Nachkommastellen ein. ");
             sc.nextLine();
           
             }
@@ -21,7 +21,7 @@ public class Huehnerhof_2 {
        
             while (!sc.hasNextInt()) {
                 
-                System.out.println("Bitte geben Sie die Anzahl ohne nachkommastellen ein. ");
+                System.out.println("Bitte geben Sie die Anzahl ohne Nachkommastellen ein. ");
                 sc.nextLine();
               
                 }
