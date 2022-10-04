@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.lang.Math;
+import java.text.DecimalFormat;
 
 public class Schwimmbad {
     public static void main(String[] args) {
@@ -9,6 +9,7 @@ public class Schwimmbad {
         double kostenor;
 
         Scanner sc = new Scanner(System.in);
+        java.text.DecimalFormat df = new DecimalFormat("#.##");
 
         System.out.println("Wie viele Erwachsene wollen baden?");
         int erwachsene = sc.nextInt();
@@ -50,11 +51,11 @@ public class Schwimmbad {
 
         if (kinder+erwachsene < 4){
 
-            System.out.print("Die Kosten betragen: " + Math.round(kostenor));
+            System.out.print("Die Kosten betragen: " + df.format(kostenor));
             
         }else{
 
-            System.out.print("Die Kosten betragen: " + Math.round(kostenor*0.8));
+            System.out.print("Die Kosten betragen: " + df.format(kostenor*0.8));
 
         }
 
