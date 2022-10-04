@@ -24,8 +24,8 @@ public class Dividierer {
             double c = sc.nextDouble();
             int d = (int) c;
         
-            System.out.println("Das Ergebnis ist " + b/d + " Rest: " + Math.ceil(a%c*10)/10);
-            System.out.println("Ohne Rest ist das Ergebnis: " + df.format(a/c)); 
+            System.out.print("Das Ergebnis ist " + b/d + " Rest: " + Math.ceil(a%c*10)/10);
+            System.out.print("Ohne Rest ist das Ergebnis: " + df.format(a/c)); 
             System.out.println();
             System.out.println("Um noch eine Aufgabe lösen zu lassen, geben Sie einen Divident >=1 ein.");
             System.out.println("Um das Programm zu schliesen geben Sie 0 ein.");

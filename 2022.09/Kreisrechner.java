@@ -12,7 +12,7 @@ public class Kreisrechner {
 
         System.out.println("Der Durchmesser ist: " + 2*a);
         System.out.println("Die Kreisfläche ist: " + a*a*3.1416);
-        System.out.println("Der Kreisumfang ist: " + 2*a*3.1416);
+        System.out.print("Der Kreisumfang ist: " + 2*a*3.1416);
 
         sc.close();
         

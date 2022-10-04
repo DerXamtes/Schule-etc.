@@ -25,7 +25,7 @@ public class Treibstoffverbrauch {
 
         double b = sc.nextDouble();
 
-        System.out.println("Der Verbrauch liegt bei: " + a*b*4.5*35 + " Liter");
+        System.out.print("Der Verbrauch liegt bei: " + a*b*4.5*35 + " Liter");
 
         sc.close();        
 

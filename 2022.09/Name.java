@@ -10,7 +10,7 @@ public class Name {
     
     String Name = sc.next(); 
     
-    System.out.println("Hallo " + Name + "!");
+    System.out.print("Hallo " + Name + "!");
 
     sc.close();
  

@@ -8,7 +8,7 @@ public class Temperaturrechner {
         System.out.println("Bitte geben Sie die Temperatur in Fahrenheit ein.");
 
         double a = sc.nextDouble();
-        System.out.println(a + " Grad Fahrenheit entsprechen " +  (a-32)*5/9 + " Grad Celcius");
+        System.out.print(a + " Grad Fahrenheit entsprechen " +  (a-32)*5/9 + " Grad Celcius");
 
         sc.close();
     }

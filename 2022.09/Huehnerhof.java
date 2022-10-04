@@ -16,7 +16,7 @@ public class Huehnerhof {
         int b = sc.nextInt();
 
         System.out.println(a + " Hühner legen an " + b + " Tagen ca.: " + Math.round(a*b*5.6/7) + " Eier.");
-        System.out.println("Dafür brauchen sie " + a*b*130.0/1000 + " Kilo Futter");
+        System.out.print("Dafür brauchen sie " + a*b*130.0/1000 + " Kilo Futter");
 
         sc.close();
         

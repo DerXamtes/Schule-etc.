@@ -14,7 +14,7 @@ public class Verbrauch {
     double b = sc.nextDouble();
     
     double Durchschnitt = b/a*100;
-    System.out.println("Der Verbrauch auf 100km liegt bei =" + Durchschnitt + "Liter");
+    System.out.print("Der Verbrauch auf 100km liegt bei =" + Durchschnitt + "Liter");
 
     sc.close();
   
