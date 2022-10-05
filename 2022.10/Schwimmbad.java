@@ -18,7 +18,7 @@ public class Schwimmbad {
         int kinder = sc.nextInt();
 
         System.out.println("Wie viele Stunden wollen alle baden?");
-        int badezeit = sc.nextInt();
+        double badezeit = sc.nextDouble();
 
         System.out.println("Ist Zugang zur Therme erwünscht? (true/false)");
         boolean therme = sc.nextBoolean();
