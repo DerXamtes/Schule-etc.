@@ -1,2 +1,2 @@
-# Schule
-Schule halt.
+# Privat
+Privat
