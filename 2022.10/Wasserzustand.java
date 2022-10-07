@@ -5,6 +5,8 @@ public class Wasserzustand {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Hello");
+
         sc.close();
         
     }
