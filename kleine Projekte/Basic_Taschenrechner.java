@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Taschenrechner {
+public class Basic_Taschenrechner {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -15,22 +15,22 @@ public class Taschenrechner {
         System.out.println("Was ist die zweite zahl?");
         double b = sc.nextDouble();
 
-        if (Operation == "plus") {
+        if (Operation.equals("plus")) {
 
             System.out.print("Das Ergebniss ist: " + (a + b));            
         }
         
-        if (Operation == "minus") {
+        if (Operation .equals("minus")) {
 
             System.out.print("Das Ergebniss ist: " + (a - b));   
         }
 
-        if (Operation == "mal"){
+        if (Operation.equals("mal")){
 
             System.out.print("Das Ergebniss ist: " + (a * b));   
         }
 
-        if (Operation == "geteilt"){
+        if (Operation.equals("geteilt")){
             
             System.out.print("Das Ergebniss ist: " + (a / b));   
         }
