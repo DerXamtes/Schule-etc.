@@ -5,8 +5,6 @@ public class Handytariff {
 
         Scanner sc = new Scanner(System.in);
 
-        
-
         sc.close();
     }
 
