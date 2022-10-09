@@ -5,7 +5,7 @@ public class Taschenrechner {
 
         Scanner sc = new Scanner(System.in);
 
-        
+        System.out.println("Welche rechenoption wollen sie ausführen? (plus/minus/mal/geteilt)");
 
         sc.close();
         
