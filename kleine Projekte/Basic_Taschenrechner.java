@@ -20,7 +20,7 @@ public class Basic_Taschenrechner {
             System.out.print("Das Ergebniss ist: " + (a + b));            
         }
         
-        if (Operation .equals("minus")) {
+        if (Operation.equals("minus")) {
 
             System.out.print("Das Ergebniss ist: " + (a - b));   
         }
