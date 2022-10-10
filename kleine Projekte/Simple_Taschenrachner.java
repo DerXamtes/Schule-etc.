@@ -5,8 +5,9 @@ public class Simple_Taschenrachner {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Bitte geben sie den Rechenoperator (plus/minus/mal/geteilt) an den Sie verwenden wollen .");
-        String Operation = sc.nextLine();
+        System.out.println("Bitte geben sie den Rechenoperator (plus/minus/mal/geteilt) an den Sie verwenden wollen.");
+        String ab = sc.nextLine();
+        String Operation = ab.toLowerCase();
 
         while(true){
             
@@ -16,34 +17,36 @@ public class Simple_Taschenrachner {
             System.out.println("Bitte geben Sie die zweite zahl ein.");
             double b = sc.nextDouble();
 
-                if (a != 0) {
+            if (Operation.equals("plus")){
 
-                    if (Operation.equals("plus")){
+                System.out.println("Das ergebnis ist: " + (a + b));
+            }
 
-                        System.out.println("Das ergebnis ist: " + (a + b));
-                    }
+            else if (Operation.equals("minus")){
 
-                    if (Operation.equals("minus")){
-
-                        System.out.println("Das Ergebnisist:" + (a-b));
-                    }
+                System.out.println("Das Ergebnisist:" + (a-b));
+            }
                     
-                    if (Operation.equals("mal")){
+            else if (Operation.equals("mal")){
 
-                        System.out.println("Das ergebnis ist: " + (a * b));
-                    }
+                System.out.println("Das ergebnis ist: " + (a * b));
+            }
 
-                    if (Operation.equals("geteilt")){
+            else if (Operation.equals("geteilt")){
 
-                        System.out.println("Das Ergebnisist:" + (a/b));
-                    }
+                System.out.println("Das Ergebnisist:" + (a/b));
+            }
+
+            else {
+                System.out.println("falscher Rechenoperator");
+            }
                     
-                    System.out.println("Um noch eine Rechnung zu rechnen geben Sie den gewünschten Operator (plus/minus/mal/geteilt) ein.");
-                    System.out.println("Um den Taschenrechner zu Stoppen geben Sie Stopp ein");
-                    Operation = sc.next();
-                }
+            System.out.println("Um noch eine Rechnung zu rechnen geben Sie den gewünschten Operator (plus/minus/mal/geteilt) ein.");
+            System.out.println("Um den Taschenrechner zu Stoppen geben Sie Stopp ein");
+            ab = sc.next();
+            Operation = ab.toLowerCase();
 
-            if (Operation.equals("Stopp")){
+            if (Operation.equals("stopp")){
                     
                 System.out.println("Danke für's verwendern des Taschenrechners. :)");
                 break;
@@ -54,4 +57,5 @@ public class Simple_Taschenrachner {
     sc.close();
         
     }
+
 }
