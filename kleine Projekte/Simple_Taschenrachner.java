@@ -17,7 +17,7 @@ public class Simple_Taschenrachner {
                 System.out.println("Bitte geben Sie eine zahl ein. ");
                 sc.nextLine();
               
-                }
+            }
               
                 Double a = sc.nextDouble();
 
@@ -27,7 +27,7 @@ public class Simple_Taschenrachner {
                 System.out.println("Bitte geben Sie eine zahl ein. ");
                 sc.nextLine();
               
-                }
+            }
               
                 Double b = sc.nextDouble();
             
