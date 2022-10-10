@@ -15,8 +15,7 @@ public class Simple_Taschenrachner {
             while (!sc.hasNextDouble()) {
             
                 System.out.println("Bitte geben Sie eine zahl ein. ");
-                sc.nextLine();
-              
+                sc.nextLine();    
             }
               
                 Double a = sc.nextDouble();
@@ -25,8 +24,7 @@ public class Simple_Taschenrachner {
             while (!sc.hasNextDouble()) {
             
                 System.out.println("Bitte geben Sie eine zahl ein. ");
-                sc.nextLine();
-              
+                sc.nextLine();   
             }
               
                 Double b = sc.nextDouble();
