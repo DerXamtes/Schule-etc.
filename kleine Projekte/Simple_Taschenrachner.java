@@ -12,11 +12,25 @@ public class Simple_Taschenrachner {
         while(true){
             
             System.out.println("Bitte geben Sie die erste zahl ein.");
-            double a = sc.nextDouble();
+            while (!sc.hasNextDouble()) {
+            
+                System.out.println("Bitte geben Sie eine zahl ein. ");
+                sc.nextLine();
+              
+                }
+              
+                Double a = sc.nextDouble();
 
             System.out.println("Bitte geben Sie die zweite zahl ein.");
-            double b = sc.nextDouble();
-
+            while (!sc.hasNextDouble()) {
+            
+                System.out.println("Bitte geben Sie eine zahl ein. ");
+                sc.nextLine();
+              
+                }
+              
+                Double b = sc.nextDouble();
+            
             if (Operation.equals("plus")){
 
                 System.out.println("Das ergebnis ist: " + (a + b));
