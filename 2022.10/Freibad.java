@@ -8,18 +8,11 @@ public class Freibad {
         System.out.println("Wie alt ist die Person?");
         int a = sc.nextInt();
 
-        if (a < 12) {
+        if (a < 3) {
 
-            if (a < 3) {
-
-                System.out.print("Der Eintritt ist frei.");
-            
-            }else {
-
-                System.out.print("Der Eintritt kostet: 2,50.");
-            }
+            System.out.print("Der Eintritt ist frei.");
         
-        } else if (a > 65) {
+        } else if (a > 65 || a < 12) {
 
             System.out.print("Der Eintriit kostet: 2,50.");
         

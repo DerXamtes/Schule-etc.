@@ -6,12 +6,12 @@ public class EsWerdeLicht {
         Scanner sc= new Scanner(System.in);
 
         System.out.println("Ist die Lampe angeschlossen?");
-        boolean Strom = sc.nextBoolean();
+        boolean strom = sc.nextBoolean();
 
         System.out.println("Ist der Schalter an?");
-        boolean Schalter = sc.nextBoolean();
+        boolean schalter = sc.nextBoolean();
 
-        if (Strom && Schalter) {
+        if (strom && schalter) {
 
             Boolean Licht = true; 
             System.out.print(Licht);

@@ -7,25 +7,25 @@ public class Wasserzustand {
 
         System.out.println("Welche Temperatur hat das Wasser?");
 
-        double Temperatur = sc.nextDouble();
+        double temperatur = sc.nextDouble();
 
-        if (Temperatur < 0) {
+        if (temperatur < 0) {
 
             System.out.print("Das Wasser ist gefroren.");
         
-        } if (Temperatur == 0) {
+        } if (temperatur == 0) {
 
             System.out.print("Das Wasser könnte sowohl gefroren als auch flüssig sein.");
         
-        } if (Temperatur > 0 && Temperatur < 100) {
+        } if (temperatur > 0 && temperatur < 100) {
 
             System.out.print("Das Wasser ist flüssig.");
           
-        } if (Temperatur == 100) {
+        } if (temperatur == 100) {
 
             System.out.print("Das Wasser könnte sowohl flüssig als auch gasförmig sein.");
         
-        } if (Temperatur > 100) {
+        } if (temperatur > 100) {
 
             System.out.print("Das Wasser ist gasförmig.");
         }
