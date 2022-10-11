@@ -12,6 +12,7 @@ public class Simple_Taschenrachner {
         while(true){
             
             System.out.println("Bitte geben Sie die erste zahl ein.");
+            
             while (!sc.hasNextDouble()) {
             
                 System.out.println("Bitte geben Sie eine zahl ein. ");
@@ -21,6 +22,7 @@ public class Simple_Taschenrachner {
                 Double a = sc.nextDouble();
 
             System.out.println("Bitte geben Sie die zweite zahl ein.");
+            
             while (!sc.hasNextDouble()) {
             
                 System.out.println("Bitte geben Sie eine zahl ein. ");
@@ -46,6 +48,7 @@ public class Simple_Taschenrachner {
                 System.out.println("Das Ergebnisist:" + (a/b));
             
             } else {
+                
                 System.out.println("falscher Rechenoperator");
             }
                     
