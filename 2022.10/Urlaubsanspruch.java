@@ -11,7 +11,7 @@ public class Urlaubsanspruch {
         System.out.println("Bitte geben Sie Ihr Behindertengrad in Prozent ein.");
         int prozent = sc.nextInt();
 
-        System.out.println("Bitte geben Sie Ihre Betriebszugehörigkeit ein");
+        System.out.println("Wie viel hJahre arbeiten Sie schon für den Betrieb?");
         int zu = sc.nextInt();
 
         int urlaubstage = 26;
