@@ -11,15 +11,11 @@ public class Gerade_Ungerade{
 
         if ((zahl%2) == 0) {
 
-            int a = zahl*2;
-
-            System.out.print(a);
+            System.out.print("Die Zahl ist gerade.");
             
         } else {
 
-            int b = zahl+1;
-
-            System.out.print(b);
+            System.out.print("Die zahl ist ungerade.");
             
         }
 
