@@ -8,7 +8,7 @@ public class Freibad {
         System.out.println("Wie alt ist die Person?");
         int a = sc.nextInt();
 
-        if (a < 3) {
+        if (a <= 3) {
 
             System.out.print("Der Eintritt ist frei.");
         
