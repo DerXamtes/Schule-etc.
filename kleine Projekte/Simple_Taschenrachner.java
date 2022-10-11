@@ -29,27 +29,23 @@ public class Simple_Taschenrachner {
               
                 Double b = sc.nextDouble();
             
-            if (Operation.equals("plus")){
+            if (Operation.equals("plus")) {
 
                 System.out.println("Das ergebnis ist: " + (a + b));
-            }
-
-            else if (Operation.equals("minus")){
+            
+            } else if (Operation.equals("minus")) {
 
                 System.out.println("Das Ergebnisist:" + (a-b));
-            }
-                    
-            else if (Operation.equals("mal")){
+            
+            } else if (Operation.equals("mal")) {
 
                 System.out.println("Das ergebnis ist: " + (a * b));
-            }
-
-            else if (Operation.equals("geteilt")){
+            
+            } else if (Operation.equals("geteilt")) {
 
                 System.out.println("Das Ergebnisist:" + (a/b));
-            }
-
-            else {
+            
+            } else {
                 System.out.println("falscher Rechenoperator");
             }
                     

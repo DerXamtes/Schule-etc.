@@ -28,22 +28,17 @@ public class Schwimmbad {
             kostenew = 5;
             kostenki = 2.5;
             
-        } else {
-
-            if (badezeit <=3) {
+        } else if (badezeit <=3) {
 
             kostenew = 5.8;
             kostenki = 2.9;
-            
-            }
-
         }
 
         if (therme){
 
             kostenor = (kinder*kostenki) + (erwachsene*kostenew) + (kinder + erwachsene)*2; 
         
-        }else{
+        } else {
 
             kostenor = (kinder*kostenki) + (erwachsene*kostenew);
 
@@ -53,7 +48,7 @@ public class Schwimmbad {
 
             System.out.print("Die Kosten betragen: " + df.format(kostenor));
             
-        }else{
+        } else {
 
             System.out.print("Die Kosten betragen: " + df.format(kostenor*0.8));
 
