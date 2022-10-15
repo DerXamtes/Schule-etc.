@@ -19,4 +19,5 @@ public class EsWerdeLicht {
 
         sc.close();
     }
+
 }
