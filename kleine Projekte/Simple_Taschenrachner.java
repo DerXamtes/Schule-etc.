@@ -51,7 +51,7 @@ public class Simple_Taschenrachner {
                 
                 System.out.println("falscher Rechenoperator");
             }
-                    
+            
             System.out.println("Um noch eine Rechnung zu rechnen geben Sie den gewünschten Operator (plus/minus/mal/geteilt) ein.");
             System.out.println("Um den Taschenrechner zu Stoppen geben Sie Stopp ein");
             ab = sc.next();
