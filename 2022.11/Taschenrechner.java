@@ -8,7 +8,7 @@ public class Taschenrechner {
         double ergebnis = 0;
 
         System.out.println("Bitte geben Sie die erste zahl ein.");
-            
+
         while (!sc.hasNextDouble()) {
         
             System.out.println("Bitte geben Sie eine zahl ein. ");
@@ -45,8 +45,8 @@ public class Taschenrechner {
         }
 
         System.out.println("Das Ergebniss ist: " + ergebnis);
-        
-        sc.close();
 
+        sc.close();
     }
+
 }
