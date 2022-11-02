@@ -47,7 +47,6 @@ public class Taschenrechner {
         }
 
         try {
-            //b = 4/0.0;
 
         if(ergebnis == Double.POSITIVE_INFINITY) {
 
