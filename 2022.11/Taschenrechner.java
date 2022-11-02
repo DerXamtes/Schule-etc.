@@ -34,6 +34,8 @@ public class Taschenrechner {
         String s = sc.next();
         char operator = s.charAt(0);
 
+        sc.close();
+
         switch (operator) {
 
             case '+' : ergebnis = a+b; break;
@@ -44,9 +46,23 @@ public class Taschenrechner {
             default: System.out.println("Falscher Operator");
         }
 
-        System.out.println("Das Ergebniss ist: " + ergebnis);
+        try {
+            b = 4.0/0;
 
-        sc.close();
+        if(ergebnis == Double.POSITIVE_INFINITY) {
+
+            throw new ArithmeticException();
+
+        } else {
+
+            System.out.println("Das Ergebnis ist: " + ergebnis);
+        }
+        
+        } catch (ArithmeticException e){
+
+            System.out.println("To Infinity and beyond!");
+        }
+
     }
 
 }
