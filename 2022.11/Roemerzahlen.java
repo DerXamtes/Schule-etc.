@@ -5,7 +5,7 @@ public class Roemerzahlen {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Bitte geben Sie die Römische Zahl ein(I,V,X,L,C,D,M)");
+        System.out.println("Bitte geben Sie die Römische Zahl ein.");
         
     }
 }
