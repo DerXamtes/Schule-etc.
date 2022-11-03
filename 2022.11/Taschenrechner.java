@@ -9,13 +9,13 @@ public class Taschenrechner {
 
         System.out.println("Bitte geben Sie die erste zahl ein.");
 
-        do {
-
             while (!sc.hasNextDouble()) {
         
                 System.out.println("Bitte geben Sie eine zahl ein. ");
                 sc.nextLine();    
             }
+
+        do {
 
             Double a = sc.nextDouble();
             
