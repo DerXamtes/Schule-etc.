@@ -55,7 +55,7 @@ public class Taschenrechner {
                 System.out.println("Das Ergebnis ist: " + ergebnis);
             }
             
-            } catch (ArithmeticException e){
+            } catch (ArithmeticException e) {
 
                 System.out.println("To Infinity and beyond!");
             }
