@@ -5,7 +5,7 @@ public class Wuerfel{
         int b = 0;
         
         do {
-            a = ((int)Math.random()*6+1);
+            a = (int)(Math.random()*6+1);
             b = b + 1;
             
         } while (a != 6);
