@@ -17,9 +17,7 @@ public class Taschenrechner {
           
             Double a = sc.nextDouble();
 
-        System.out.println("Bitte geben Sie die zweite zahl ein.");
-
-        
+        System.out.println("Bitte geben Sie die zweite zahl ein.");        
         
         while (!sc.hasNextDouble()) {
         
@@ -61,7 +59,7 @@ public class Taschenrechner {
 
             System.out.println("To Infinity and beyond!");
         }
-
+        
     }
 
 }
