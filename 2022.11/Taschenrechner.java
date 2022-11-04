@@ -61,7 +61,7 @@ public class Taschenrechner {
             }
 
             System.out.println("Um eine zweite Rechnug rechnen zu lassen, geben Sie die erste Zahl der nächsten rechnung ein.");              
-            System.out.println("Um den Taschenrechenr zu schließen geben sie Stopp ein.");
+            System.out.println("Um den Taschenrechenr zu schließen geben Sie Stopp ein.");
 
         } while (sc.hasNextDouble());
 
