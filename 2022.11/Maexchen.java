@@ -52,7 +52,7 @@ public class Maexchen {
 
         if (punkte == 100420) {
 
-            System.out.println("Funny Number! hahaha");
+            System.out.println("Funny Number! hahaha lmfao");
         }
 
     }
