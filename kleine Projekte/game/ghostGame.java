@@ -22,7 +22,7 @@ public class ghostGame {
             random = (int) (Math.random() * 3 + 1);
             System.out.println(text[0]);
             eingabe = Integer.parseInt(br.readLine());
-        
+    
             if (eingabe != random){
         
                 score= 1;
@@ -38,7 +38,7 @@ public class ghostGame {
         System.out.println("\nDo you want to add your highscore to the ranking? <y> for yes / <n> for no");
         
         String eingabe2 = br.readLine();
-
+        
         if (eingabe2.equals("y")) {
 
             try {
