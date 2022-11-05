@@ -9,12 +9,12 @@ public class Maexchen {
 
             int a = (int)(Math.random()*6 +1);
             int b = (int)(Math.random()*6 +1);
-            anzahlw = anzahlw + 1;
+            anzahlw++;
 
             if (a+b == 3) {
 
                 punkte = punkte + 1000;
-                anzahlm = anzahlm +1;
+                anzahlm++;
 
             } else if (a == b) {
 

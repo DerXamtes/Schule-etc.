@@ -5,7 +5,7 @@ public class Hans {
         do {
 
             System.out.println("Ich muss immer meine Hausaufgaben machen.");
-            a = a +1;
+            a++;
             
         } while (a < 50);
     

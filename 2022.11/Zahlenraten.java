@@ -13,7 +13,7 @@ public class Zahlenraten{
             
             System.out.println("Bitte geben Sie Ihre Zahle ein (1-100)");
             ratezahl = sc.nextInt();
-            counter = counter + 1;
+            counter++;
 
             if (ratezahl != zufallszahl) {
 
