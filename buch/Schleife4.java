@@ -12,10 +12,12 @@ public class Schleife4 {
             if (i < 10) {
                 
                 weiter = true;
+            
             } else {
         
                 weiter = false;
             }
+
         }
 
         while (weiter);
