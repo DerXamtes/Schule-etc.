@@ -21,19 +21,19 @@ public class DoorGame {
 
             random =  (int)(Math.random()*3 + 1);
 
-            if (door == random) {
+            if (door != random) {
 
-                System.out.println("Game Over!" + 
-                                    "\nYour score is: " + score);
-                dead++;
-                break;
+                System.out.println("To choose the next door type 1,2 or 3" + 
+                "\n[1][2][3]");
+
+                score++;
             
             } else {
 
-                System.out.println("To choose the next door type 1,2 or 3" + 
-                                    "\n[1][2][3]");
-                
-                score++;
+                System.out.println("Game Over!" + 
+                                    "\nYour score is: " + score);
+
+                dead++;
             }
         
         }
