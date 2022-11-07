@@ -1,4 +1,4 @@
-package game;
+package DoorGame;
 
 import java.util.Scanner;
 
