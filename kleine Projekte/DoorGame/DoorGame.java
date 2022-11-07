@@ -66,8 +66,8 @@ public class DoorGame {
 
                 System.out.println("Game Over! \nYour score is: " + score + "\nDo you want to play again? (y/n)");
                 
-                again = sc.next();
-                again.toLowerCase();
+                again = sc.next(); 
+                again = again.toLowerCase();
 
                 switch (again) {
 
