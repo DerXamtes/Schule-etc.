@@ -7,14 +7,37 @@ public class DoorGame {
 
         Scanner sc = new Scanner(System.in);
 
-        int dead = 0;
+        int menu;
         int door;
         int random;
         int score = 0;
 
-        System.out.println("Welcome to the Door Game! \nTo choose a door type 1,2 or 3.\n[1][2][3)");
+        System.out.println("Welcome to the Door Game! \n[1]Start \n[2]Highscore \n[3]Exit");
 
-        while (dead == 0) {
+        while (!sc.hasNextInt()) {
+            
+            System.out.println("Please enter a number between 1 and 3.");
+            sc.nextLine();
+        }
+
+        menu = sc.nextInt();
+
+        if (menu < 1 || menu > 3) {
+
+            System.out.println("Please enter a number between 1 and 3");
+            menu = sc.nextInt();
+        }
+
+        switch (menu) {
+
+            case 1 : break;
+            case 2 : System.out.println("Highscore is wip."); System.exit(0); break;
+            default : System.out.println("Bye."); System.exit(0); break;
+        }        
+
+        System.out.println("To choose a door type 1,2 or 3.\n[1][2][3)");
+
+        while (menu == 1) {
             
             while (!sc.hasNextInt()) {
         
@@ -41,7 +64,7 @@ public class DoorGame {
             } else {
 
                 System.out.println("Game Over! \nYour score is: " + score);
-                dead++;
+                menu = 3;
             }
         
         }
