@@ -35,7 +35,7 @@ public class DoorGame {
             default : System.out.println("Bye."); System.exit(0); break;
         }        
 
-        System.out.println("To choose a door type 1,2 or 3.\n[1][2][3)");
+        System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]");
 
         while (menu == 1) {
             
