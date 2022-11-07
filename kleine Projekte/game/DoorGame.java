@@ -5,18 +5,17 @@ public class DoorGame {
 
         Scanner sc = new Scanner(System.in);
 
+        String again;
         int dead = 0;
         int door;
         int random;
         int score = 0;
 
-        System.out.println("Welcome to the Door Game!" + 
-                            "\nTo choose a door type 1,2 or 3." + 
-                            "\n[1][2][3)");
+        System.out.println("Welcome to the Door Game! \nTo choose a door type 1,2 or 3.\n[1][2][3)");
 
         while (dead == 0) {
             
-            while (!sc.hasNextDouble()) {
+            while (!sc.hasNextInt()) {
         
                 System.out.println("Please enter a number between 1 and 3.");
                 sc.nextLine();    
@@ -34,8 +33,7 @@ public class DoorGame {
 
             if (door != random) {
 
-                System.out.println("To choose the next door type 1,2 or 3" + 
-                "\n[1][2][3]");
+                System.out.println("To choose the next door type 1,2 or 3 \n[1][2][3]");
 
                 score++;
             
@@ -44,7 +42,6 @@ public class DoorGame {
                 System.out.println("Game Over!" + 
                                     "\nYour score is: " + score);
 
-                dead++;
             }
         
         }
