@@ -15,8 +15,14 @@ public class DoorGame {
                             "\n[1][2][3)");
 
         while (dead == 0) {
-
+            
             door = sc.nextInt();
+
+            while (door > 3 || door < 1) {
+
+                System.out.println("Please enter a number between 1 and 3.");
+                door = sc.nextInt();
+            }
 
             random =  (int)(Math.random()*3 + 1);
 
