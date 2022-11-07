@@ -1,3 +1,5 @@
+package game;
+
 import java.util.Scanner;
 
 public class DoorGame {
@@ -5,7 +7,6 @@ public class DoorGame {
 
         Scanner sc = new Scanner(System.in);
 
-        String again;
         int dead = 0;
         int door;
         int random;
@@ -39,9 +40,8 @@ public class DoorGame {
             
             } else {
 
-                System.out.println("Game Over!" + 
-                                    "\nYour score is: " + score);
-
+                System.out.println("Game Over! \nYour score is: " + score);
+                dead++;
             }
         
         }
