@@ -1,9 +1,9 @@
 public class Maexchen {
     public static void main(String[] args) {
 
-        int punkte = 0;
-        int anzahlw = 0;
-        int anzahlm = 0;
+        double punkte = 0;
+        double anzahlw = 0;
+        double anzahlm = 0;
 
         while (punkte < 100000) {
 
