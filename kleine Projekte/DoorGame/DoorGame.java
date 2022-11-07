@@ -7,6 +7,7 @@ public class DoorGame {
 
         Scanner sc = new Scanner(System.in);
 
+        String again;
         int menu;
         int door;
         int random;
@@ -63,8 +64,18 @@ public class DoorGame {
             
             } else {
 
-                System.out.println("Game Over! \nYour score is: " + score);
-                menu = 3;
+                System.out.println("Game Over! \nYour score is: " + score + "\nDo you want to play again? (y/n)");
+                
+                again = sc.next();
+                again.toLowerCase();
+
+                switch (again) {
+
+                    case "y" : menu = 1; System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]"); break;
+                    case "yes" : menu = 1; System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]"); break;
+                    default : System.out.println("Thank you for playing! :)"); System.exit(0); break;
+                }
+
             }
         
         }
