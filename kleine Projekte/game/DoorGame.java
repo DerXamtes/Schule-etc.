@@ -16,6 +16,12 @@ public class DoorGame {
 
         while (dead == 0) {
             
+            while (!sc.hasNextDouble()) {
+        
+                System.out.println("Please enter a number between 1 and 3.");
+                sc.nextLine();    
+            }
+
             door = sc.nextInt();
 
             while (door > 3 || door < 1) {
