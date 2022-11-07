@@ -18,11 +18,6 @@ public class DoorGame {
 
             door = sc.nextInt();
 
-            if (door < 4) {
-
-                System.out.println("Please enter a number between 1 and 3.");
-            }
-
             random =  (int)(Math.random()*3 + 1);
 
             if (door != random) {
