@@ -9,15 +9,15 @@ public class Schleifenanalyse{
         x = sc.nextInt(); 
         y = sc.nextInt(); 
 
-        for (int i=0; i < y; i++) {
+        for (int i = 0; i < y; i++) {
         
             x=x+1;
         }
         
-        System.out.println(x);
+        System.out.print(x);
         sc.close();
     }
 
 }
 
-//er addiert zu einem Wert so oft 1, biss die Anzahl der Additionen, dem zweitem Wert entsprechen.
+//Er addiert zu einem Wert so oft 1, biss die Anzahl der Additionen, dem zweitem Wert entsprechen.
