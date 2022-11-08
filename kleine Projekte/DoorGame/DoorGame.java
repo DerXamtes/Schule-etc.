@@ -8,8 +8,6 @@ public class DoorGame {
 
         Scanner sc = new Scanner(System.in);
 
-                    File highscore;
-
         String again;
         int score = 0;
 
@@ -66,32 +64,32 @@ public class DoorGame {
 
                 System.out.println("Game Over! \nYour score is: " + score);
 
-                            System.out.println("Do you want to save your score? (y/n)");
+                                    System.out.println("Do you want to save your score? (y/n)");
 
-                            String save = sc.next();
-                            save = save.toLowerCase();
+                                    String save = sc.next();
+                                    save = save.toLowerCase();
 
-                            switch (save) {
+                                    switch (save) {
 
-                                case "y" : case "yes" :
+                                        case "y" : case "yes" :
 
-                                    System.out.println("What is your name?");
-                                    String name = sc.next();
+                                            System.out.println("What is your name?");
+                                            String name = sc.next();
 
-                                    highscore = new File("Highscore.txt");
+                                            File highscore = new File("Highscore.txt");
 
-                                    try {
-                                
-                                        BufferedWriter writer = new BufferedWriter(new FileWriter(highscore));
-                                        writer.write(score + " by " + name);
-                                        writer.close();
-                                
-                                    } catch(IOException ioe) {
-                                
-                                    System.err.println(ioe);
-                                }
-                            
-                            }
+                                            try {
+                                        
+                                                FileWriter writer = new FileWriter(highscore);
+                                                writer.append(score + " by " + name);
+                                                writer.close();
+                                        
+                                            } catch(IOException ioe) {
+                                        
+                                            System.err.println(ioe);
+                                        }
+                                    
+                                    }
 
                 System.out.println("Do you want to play again? (y/n)");
                 again = sc.next(); 
