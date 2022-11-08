@@ -64,27 +64,27 @@ public class DoorGame {
 
                 System.out.println("Game Over! \nYour score is: " + score);
 
-                        System.out.println("Do you want to save your score? (y/n)");
+                            System.out.println("Do you want to save your score? (y/n)");
 
-                        String save = sc.next();
-                        save = save.toLowerCase();
+                            String save = sc.next();
+                            save = save.toLowerCase();
 
-                        switch (save) {
+                            switch (save) {
 
-                            case "y" : case "yes" : System.out.println("What is your name?");
-                                                    String name = sc.next();
-                                try {
+                                case "y" : case "yes" : System.out.println("What is your name?");
+                                                        String name = sc.next();
+                                    try {
+                                
+                                        FileWriter writer = new FileWriter("C:\\Users\\Maximilian\\OneDrive\\Dokumente\\GitHub\\Schule\\kleine Projekte\\DoorGame\\Highscore.txt");
+                                        writer.append(score + " by " + name);
+                                        writer.close();
+                                
+                                    } catch (IOException ioe) {
+                                
+                                    System.err.println(ioe);
+                                }
                             
-                                    FileWriter writer = new FileWriter("C:\\Users\\Maximilian\\OneDrive\\Dokumente\\GitHub\\Schule\\kleine Projekte\\DoorGame\\Highscore.txt");
-                                    writer.append(score + " by " + name);
-                                    writer.close();
-                            
-                                } catch (IOException ioe) {
-                            
-                                System.err.println(ioe);
                             }
-                        
-                        }
 
                 System.out.println("Do you want to play again? (y/n)");
                 again = sc.next(); 

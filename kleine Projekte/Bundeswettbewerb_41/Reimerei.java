@@ -5,7 +5,9 @@ import java.util.Scanner;
 
 public class Reimerei {
     public static void main (String[]args) throws IOException {
+        
         try {
+            
             FileReader fr = new FileReader("C:\\Users\\Maximilian\\OneDrive\\Dokumente\\GitHub\\Schule\\kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt");
             BufferedReader br = new BufferedReader(fr);
 
@@ -14,36 +16,45 @@ public class Reimerei {
             String[] vokale ={"a","e","i","o","u","au","eu","ai","ei","ou","ee"};
             String bw1, bw2;
             String w1, w2;
-
-            int a = 0;
-            int b = (int)(Math.random()*658 + 0);
-            w1 = liste[a]; 
-            w2 = liste[b];
-
+            String str;
+            
+            int a = 658;
+            int b = 1;
+            int c = 0; 
+            
             do {
 
-                for (int i = 0; i < w1.length(); i++){
-                    
-                    for(int j = 0; j < w2.length(); j++) {
+                w1 = liste[0];
+                w2 = liste[b];
+
+                for (int i = 0; i < w1.length(); i++) {
+
+                    for (int j = 0; j < w2.length(); j++) {
 
                         do {
-                        
+
                             bw1 = w1.substring(w1.length() - (i++));
                             bw2 = w2.substring(w2.length() - (j++));
-                        
+                            str = w1;
+                
+                            for (c = 0; c < str.length(); c++) {
+                                if (str.charAt(c) >= 0);
+                            }
+
                         } while (bw1.equals(bw2));
 
-                        b = (int)(Math.random()*658 + 0);
                     }
-                
+
                 }
-
-                a++;
+                
+                b++;
             
-            } while (bw1.equals(bw2));
-
+            } while(liste.length <= a);
+            
+            System.out.println(c);
+        
         } catch (IOException e) {
-            
+        
             e.printStackTrace();
         }
     
@@ -56,24 +67,25 @@ public class Reimerei {
             int count = 0;
             
             while (sc.hasNextLine()) {
-                
+            
                 count++;
                 sc.nextLine();
             }
+            
             String[] arr = new String[count];
             Scanner sc1 = new Scanner(f);
-
+            
             for (int i = 0; i < arr.length; i++) {
-                
                 arr[i] = sc1.nextLine();
             }
+            
             return arr;
         
         } catch (IOException e) {
         
             return null;
         }
-
+    
     }
 
 }
