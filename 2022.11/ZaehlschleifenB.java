@@ -1,4 +1,4 @@
-public class ZaehlenschleifenB {
+public class ZaehlschleifenB {
 
     public static void main(String[] args) {
         
