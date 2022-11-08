@@ -71,20 +71,16 @@ public class DoorGame {
 
                                     switch (save) {
 
-                                        case "y" : case "yes" :
-
-                                            System.out.println("What is your name?");
-                                            String name = sc.next();
-
-                                            File highscore = new File("Highscore.txt");
-
+                                        case "y" : case "yes" : System.out.println("What is your name?");
+                                                                String name = sc.next();
+                                                                File highscore = new File("Highscore.txt");
                                             try {
                                         
                                                 FileWriter writer = new FileWriter(highscore);
                                                 writer.append(score + " by " + name);
                                                 writer.close();
                                         
-                                            } catch(IOException ioe) {
+                                            } catch (IOException ioe) {
                                         
                                             System.err.println(ioe);
                                         }
@@ -99,7 +95,9 @@ public class DoorGame {
 
                 switch (again) {
 
-                    case "y" : case "yes" : menu = 1; System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]"); break;
+                    case "y" : case "yes" : menu = 1; 
+                                            System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]"); break;
+                    
                     default : System.out.println("Thank you for playing! :)"); System.exit(0); break;
                 }
 
