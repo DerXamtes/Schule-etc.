@@ -8,8 +8,9 @@ public class DoorGame {
 
         Scanner sc = new Scanner(System.in);
 
-        String again;
-        int score = 0;
+        String again , save, highscore, name; 
+
+        int score = 0, random, door, menu;
 
         System.out.println("Welcome to the Door Game! \n[1]Start \n[2]Highscore \n[3]Exit");
 
@@ -19,7 +20,7 @@ public class DoorGame {
             sc.nextLine();
         }
 
-        int menu = sc.nextInt();
+        menu = sc.nextInt();
 
         if (menu < 1 || menu > 3) {
 
@@ -30,7 +31,13 @@ public class DoorGame {
         switch (menu) {
 
             case 1 : break;
-            case 2 : System.out.println("Highscore is wip."); System.exit(0); break;
+            case 2 : 
+            
+                System.out.println("Highscore is wip."); 
+                System.out.println("Menu \n[1]Start \n[3]Exit");
+                menu = sc.nextInt();                
+                break;
+
             default : System.out.println("Bye."); System.exit(0); break;
         }        
 
@@ -44,7 +51,7 @@ public class DoorGame {
                 sc.nextLine();    
             }
 
-            int door = sc.nextInt();
+            door = sc.nextInt();
 
             while (door > 3 || door < 1) {
 
@@ -52,7 +59,7 @@ public class DoorGame {
                 door = sc.nextInt();
             }
 
-            int random =  (int)(Math.random()*3 + 1);
+            random =  (int)(Math.random()*3 + 1);
 
             if (door != random) {
 
@@ -64,39 +71,52 @@ public class DoorGame {
 
                 System.out.println("Game Over! \nYour score is: " + score);
 
-                            System.out.println("Do you want to save your score? (y/n)");
+                System.out.println("Do you want to save your score? (y/n)");
 
-                            String save = sc.next();
-                            save = save.toLowerCase();
+                save = sc.next();
+                save = save.toLowerCase();
 
-                            switch (save) {
+                switch (save) {
 
-                                case "y" : case "yes" : System.out.println("What is your name?");
-                                                        String name = sc.next();
-                                    try {
-                                
-                                        FileWriter writer = new FileWriter("C:\\Users\\Maximilian\\OneDrive\\Dokumente\\GitHub\\Schule\\kleine Projekte\\DoorGame\\Highscore.txt");
-                                        writer.append(score + " by " + name);
-                                        writer.close();
-                                
-                                    } catch (IOException ioe) {
-                                
-                                    System.err.println(ioe);
-                                }
-                            
-                            }
+                    case "y" : case "yes" : System.out.println("What is your name?");
+                                            name = sc.next();
+                        try {
+                    
+                            FileWriter writer = new FileWriter("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\DoorGame\\Highscore.txt");
+                            writer.append(score + " by " + name);
+                            writer.close();
+                    
+                        } catch (IOException ioe) {
+                    
+                        System.err.println(ioe);
+                    }
+                
+                }
 
+                System.out.println("Do you want to view your Highscore? (y/n)");
+                highscore = sc.next();
+
+                switch (highscore) {
+
+                    case "y" : case "yes" :
+                        System.out.println("Highscore is wip.");
+                        break;
+
+                    default: break;
+                }
+                
+                
                 System.out.println("Do you want to play again? (y/n)");
                 again = sc.next(); 
-                again = again.toLowerCase();
 
                 score = 0;
 
                 switch (again) {
 
-                    case "y" : case "yes" : menu = 1; 
-                                            System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]"); break;
-                    
+                    case "y" : case "yes" :
+                        menu = 1; System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]"); 
+                        break;
+   
                     default : System.out.println("Thank you for playing! :)"); System.exit(0); break;
                 }
 
