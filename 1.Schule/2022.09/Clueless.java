@@ -14,10 +14,10 @@ public class Clueless {
     double b = sc.nextDouble();
     
     double c = 2*a+2*b;
-    System.out.println("Umfang:" + c);
+    System.out.println("Umfang : " + c);
     
     double d = a*b;
-    System.out.print("Fläche:" + d);
+    System.out.print("Fläche : " + d);
     
     sc.close();
 

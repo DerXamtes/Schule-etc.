@@ -8,23 +8,23 @@ public class Reimerei {
         
         try {
             
-            FileReader fr = new FileReader("C:\\Users\\Maximilian\\OneDrive\\Dokumente\\GitHub\\Schule\\kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt");
+            FileReader fr = new FileReader("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt");
             BufferedReader br = new BufferedReader(fr);
 
             String word = br.readLine();
-            String[] liste = readFiles2("C:\\Users\\Maximilian\\OneDrive\\Dokumente\\GitHub\\Schule\\kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt");
-            String[] vokale ={"a","e","i","o","u","au","eu","ai","ei","ou","ee"};
+            String[] liste = readFiles2("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt");
+            String[] vokalgruppen ={"a","e","i","o","u","au","eu","ai","ei","ou","ee"};
             String bw1, bw2;
             String w1, w2;
             String str;
             
-            int a = 658;
+            int a = 0;
             int b = 1;
             int c = 0; 
             
             do {
 
-                w1 = liste[0];
+                w1 = liste[a];
                 w2 = liste[b];
 
                 for (int i = 0; i < w1.length(); i++) {
@@ -38,6 +38,7 @@ public class Reimerei {
                             str = w1;
                 
                             for (c = 0; c < str.length(); c++) {
+                                
                                 if (str.charAt(c) >= 0);
                             }
 
@@ -47,7 +48,7 @@ public class Reimerei {
 
                 }
                 
-                b++;
+                a++;
             
             } while(liste.length <= a);
             
@@ -76,6 +77,7 @@ public class Reimerei {
             Scanner sc1 = new Scanner(f);
             
             for (int i = 0; i < arr.length; i++) {
+                
                 arr[i] = sc1.nextLine();
             }
             
