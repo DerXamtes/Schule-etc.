@@ -105,7 +105,6 @@ public class DoorGame {
                     default: break;
                 }
                 
-                
                 System.out.println("Do you want to play again? (y/n)");
                 again = sc.next(); 
 
