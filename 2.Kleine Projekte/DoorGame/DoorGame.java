@@ -22,7 +22,7 @@ public class DoorGame {
 
         menu = sc.nextInt();
 
-        if (menu < 1 || menu > 3) {
+        while (menu < 1 || menu > 3) {
 
             System.out.println("Please enter a number between 1 and 3");
             menu = sc.nextInt();
@@ -38,12 +38,17 @@ public class DoorGame {
                 menu = sc.nextInt();                
                 break;
 
-            default : System.out.println("Bye."); System.exit(0); break;
+            default : System.exit(0); break;
         }        
 
-        System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]");
+        if (menu == 3) {
+
+            System.out.println("Bye.");
+        }
 
         while (menu == 1) {
+
+            System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]");
             
             while (!sc.hasNextInt()) {
         
@@ -113,7 +118,7 @@ public class DoorGame {
                 switch (again) {
 
                     case "y" : case "yes" :
-                        menu = 1; System.out.println("To choose a door type 1,2 or 3.\n[1][2][3]"); 
+                        menu = 1;
                         break;
    
                     default : System.out.println("Thank you for playing! :)"); System.exit(0); break;
