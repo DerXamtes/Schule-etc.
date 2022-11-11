@@ -13,6 +13,11 @@ public class Bus {
         if (door == 1) {
 
             light = 1;
+            
+            if (light == 1) {
+
+                System.out.println("Arlamleuchte");
+            }
 
             System.out.println("Bewegt sich der Bus? \n[1]Ja \n[2]Nein");
 
