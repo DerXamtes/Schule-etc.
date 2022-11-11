@@ -6,14 +6,14 @@ public class Tesst{
     public static void main (String[] args){
 
         String[] liste;
-        int a = 0, b = 0, lines;
+        int a = 0, b = 0;
 
         while (a < 658) {
 
             try {
 
-                BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt"));
-                
+                BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\Wörter\\reimerei3.txt"));
+
                 while (a == b) {
 
                     b = (int)(Math.random()*658 + 1);
