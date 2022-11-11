@@ -8,11 +8,11 @@ public class Reimerei {
         
         try {
             
-            FileReader fr = new FileReader("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt");
+            FileReader fr = new FileReader("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Wörter\\Bundeswettbewerb_41\\reimerei3.txt");
             BufferedReader br = new BufferedReader(fr);
 
             String word = br.readLine();
-            String[] liste = readFiles2("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\reimerei3.txt");
+            String[] liste = readFiles2("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\Wörter\\reimerei3.txt");
             String[] vokalgruppen ={"a","e","i","o","u","au","eu","ai","ei","ou","ee"};
             String bw1, bw2;
             String w1, w2;
