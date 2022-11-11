@@ -6,7 +6,7 @@ public class Tesst{
     public static void main (String[] args){
 
         String[] liste;
-        int a = 0, b = 0;
+        int a = 0, b = 0, lines;
 
         while (a < 658) {
 
