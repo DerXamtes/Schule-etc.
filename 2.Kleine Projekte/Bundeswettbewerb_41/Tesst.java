@@ -13,7 +13,7 @@ public class Tesst{
             try {
 
                 BufferedReader br = new BufferedReader(new FileReader(
-                    "C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\Bundeswettbewerb_41\\Wörter\\reimerei3.txt"));
+                    "C:\\Users\\Maximilian\\Downloads\\Wörter\\reimerei3.txt"));
                     
                 while (a == b) {
 
