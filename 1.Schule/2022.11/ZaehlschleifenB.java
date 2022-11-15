@@ -2,14 +2,14 @@ public class ZaehlschleifenB {
 
     public static void main(String[] args) {
         
-        int b = 0;
+        int summe = 0;
         
         for (int a = 1; a <= 100; a++) {
                         
-            b = b + a;
+            summe = summe + a;
         }
         
-        System.out.println(b);
+        System.out.println(summe);
     }
 
 }

@@ -79,7 +79,7 @@ public class geschachtelteSchleife {
         
             }
 
-            System.out.println("Do you want to pLay again? (y/n)");
+            System.out.println("Willst du noch eine Form zeichnen lassen? (y/n)");
             play = sc.next();
             play = play.toLowerCase();
             
