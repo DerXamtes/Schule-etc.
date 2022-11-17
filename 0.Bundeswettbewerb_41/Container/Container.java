@@ -28,6 +28,7 @@ public class Container {
             }
             Arrays.sort(zahlen);
             System.out.println("Der sc " + zahlen[zahlen.length-1]);
+            br.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -46,6 +47,9 @@ public class Container {
 
             for (int i = 0; i < arr.length; i++){
                 arr[i] = sc1.nextInt();
+
+                sc.close();
+                sc1.close();
             }
             return arr;
         } catch (IOException e){
