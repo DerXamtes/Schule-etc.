@@ -14,6 +14,7 @@ public class Umdrehen {
         }
         System.out.println();
 
+        sc.close();
     }
 
 }
