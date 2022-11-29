@@ -6,7 +6,7 @@ public class Aeiou {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
 
-        System.out.println(s = s.replaceAll("[aeiouAEIOU]","*"));    
+        System.out.println(s = s.replaceAll("[aeiouAEIOU]",""));    
     }
 
 }
