@@ -3,11 +3,12 @@ public class TuWas {
     
         tuWas("Hurra, hurra, die Rita rennt!", 'r');
     }
-        public static int tuWas(String s, char c) {
+    
+    public static int tuWas(String s, char c) {
  
-            s = s.toLowerCase();
-            char zeichen;
-            int zahl = 0;
+        s = s.toLowerCase();
+        char zeichen;
+        int zahl = 0;
         
         for(int i = 0; i < s.length(); i++) {
     
@@ -19,7 +20,8 @@ public class TuWas {
             }
  
         }
-        
+                
+        System.out.println(zahl);
         return zahl;
     }
 
