@@ -6,7 +6,7 @@ public class Palindrom {
     Scanner sc = new Scanner(System.in);
     String trow = "";
     System.out.println("Geben Sie ein Wort ein.");
-    String wort = sc.nextLine().toLowerCase();
+    String wort = sc.nextLine();
     int counter = wort.length();
 
     while (counter > 0) {
@@ -16,14 +16,9 @@ public class Palindrom {
         counter--;
     }
     
-    if (wort.equals(trow)) {
+    boolean check = wort.equalsIgnoreCase(trow);
 
-        System.out.println(true);
-    
-    } else {
-
-        System.out.println(false);
-    }
+    System.out.println(trow + '\n' + check);
 
     sc.close();
     }
