@@ -8,10 +8,9 @@ public class Highscore {
 
         try {
       
-            File Highscore = new File("Highscore.txt");
+            File Highscore = new File("2.Kleine Projekte/DoorGame/Highscore.txt");
       
-            if (Highscore.createNewFile()) {
-            } 
+            if (Highscore.createNewFile()) {} 
     
         } catch (IOException e) {
     
