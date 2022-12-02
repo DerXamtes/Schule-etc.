@@ -47,7 +47,6 @@ public class sst {
             
             } else {
 
-
                 System.out.println("Du hast verloren!\nDein Score ist: " + score);
                 score = 0;
             }
