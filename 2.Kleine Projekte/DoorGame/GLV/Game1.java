@@ -1,4 +1,4 @@
-package DoorGame;
+package DoorGame.GLV;
 
 import java.io.BufferedReader;
 import java.io.IOException;

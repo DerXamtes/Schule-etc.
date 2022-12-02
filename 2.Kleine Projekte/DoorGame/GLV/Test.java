@@ -1,8 +1,8 @@
-package DoorGame;
+package DoorGame.GLV;
 //import menu class
-import static DoorGame.Menue.*;
-import static DoorGame.Game1.*;
-import static DoorGame.Highscore.*;
+import static DoorGame.GLV.Menue.*;
+import static DoorGame.GLV.Game1.*;
+import static DoorGame.GLV.Highscore.*;
 // Kati wer hier
 //import java library
 import java.io.IOException;

@@ -87,7 +87,7 @@ public class DoorGame {
                                             name = sc.next();
                         try {
                     
-                            FileWriter writer = new FileWriter("C:\\Users\\ansor\\OneDrive\\Dokumente\\GitHub\\Privat\\2.Kleine Projekte\\DoorGame\\Highscore.txt");
+                            FileWriter writer = new FileWriter("Highscore.txt");
                             writer.append(score + " by " + name);
                             writer.close();
                     
