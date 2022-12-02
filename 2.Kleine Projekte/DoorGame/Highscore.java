@@ -23,17 +23,15 @@ public class Highscore {
             e.printStackTrace();
         }
 
-        //sort scores from top to bottom by score and delete everything after line 10
-
         if (savescore.equals("y") || savescore.equals("yes")) {
 
             System.out.println("Please enter your name.");
             name = br.readLine();
             System.out.println("Highscore is wip.");
-            //write score and name to file (score "by" name)
-            //sort file again and delte everything after line 10
+            //write score and name to file in new line (score "by" name)
         }
-    
+
+        //sort scores from top to bottom by score and delete everything after line 10
     }
 
 }

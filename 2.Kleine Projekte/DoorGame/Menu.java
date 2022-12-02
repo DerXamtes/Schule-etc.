@@ -10,6 +10,8 @@ public class Menu {
 
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
+        FileReader fr = new FileReader("2.Kleine Projekte/DoorGame/Highscore.txt");
+        BufferedReader brfile = new BufferedReader(fr);
 
         while (firstgame) {
             
@@ -28,22 +30,35 @@ public class Menu {
         switch (menuchoice) {
 
             case 1:
+                
                 logic();
                 break;
             
             case 2:
-                System.out.println("Highscore is wip." /*insert top 3 here*/ + 
-                "\nMenu\n[1] Play \n[2] Exit"); 
+
+                System.out.println("\nTop 3 Scores");
+                
+                for (int i = 0; i < 3; i++) {
+
+                    String line = brfile.readLine();
+                    System.out.println(line);
+                }
+
+                brfile.close();
+            
+                System.out.println("\nMenu\n[1] Play \n[2] Exit"); 
                 menuchoicestring = br.readLine();
                 menuchoice = Integer.parseInt(menuchoicestring);
 
                 switch (menuchoice) {
 
                     case 1:
+                       
                         logic();
                         break;
 
                     default:
+                        
                         System.out.println("Bye");
                         break;
                 }
@@ -51,6 +66,7 @@ public class Menu {
                 break;
 
             default:
+                
                 System.out.println("Bye");
                 break;
         }
