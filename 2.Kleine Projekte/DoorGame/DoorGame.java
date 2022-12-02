@@ -8,7 +8,7 @@ public class DoorGame {
 
         Scanner sc = new Scanner(System.in);
 
-        String again , save, highscore, name; 
+        String again, save, highscore, name; 
 
         int score = 0, random, door, menu;
 
