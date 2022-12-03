@@ -13,16 +13,6 @@ public class Menu {
         FileReader fr = new FileReader("2.Kleine Projekte/DoorGame/Highscore.txt");
         BufferedReader brfile = new BufferedReader(fr);
 
-        while (firstgame) {
-            
-            System.out.print(
-            "\nWelcome to the Game of Doors." + 
-            "\nIn this game you have to choose one of three doors." +
-            "\n2 of them let you advance one dosn't." + 
-            "\nGood luck and have fun. :)\n\n");
-            firstgame = false;
-        } 
-
         System.out.println("Menu\n[1] Play \n[2] Highscore \n[3] Exit");
         menuchoicestring = br.readLine();
         menuchoice = Integer.parseInt(menuchoicestring);
@@ -38,15 +28,13 @@ public class Menu {
 
                 System.out.println("\nTop 3 Scores");
                 
-                for (int i = 0; i < 3; i++) {
+                for (highscore1 = 0; highscore1 < 3; highscore1++) {
 
-                    String line = brfile.readLine();
+                    line = brfile.readLine();
                     System.out.println(line);
                 }
-
-                brfile.close();
             
-                System.out.println("\nMenu\n[1] Play \n[2] Exit"); 
+                System.out.println("\nMenu\n[1] Play \n[2] Top 10 scores \n[3] Exit"); 
                 menuchoicestring = br.readLine();
                 menuchoice = Integer.parseInt(menuchoicestring);
 
@@ -57,12 +45,24 @@ public class Menu {
                         logic();
                         break;
 
+                    case 2:
+
+                        System.out.println("\nTop 10 Scores");
+                        for (highscore2 = 0; highscore2 < 10; highscore2++) {
+
+                            line = brfile.readLine();
+                            System.out.println(line);
+                        }
+                        System.out.println();
+                        menu();
+                        break;
+
                     default:
                         
                         System.out.println("Bye");
                         break;
                 }
-                
+                brfile.close();
                 break;
 
             default:
