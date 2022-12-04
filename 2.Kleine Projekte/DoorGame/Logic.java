@@ -13,8 +13,7 @@ public class Logic {
 
     public static void logic() throws IOException {
         
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(isr);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         do {
                         

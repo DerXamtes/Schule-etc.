@@ -8,10 +8,8 @@ public class Menu {
     
     public static void menu() throws IOException {
 
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(isr);
-        FileReader fr = new FileReader("2.Kleine Projekte/DoorGame/Highscore.txt");
-        BufferedReader brfile = new BufferedReader(fr);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader brfile = new BufferedReader(new FileReader("2.Kleine Projekte/DoorGame/Highscore.txt"));
 
         System.out.println("Menu\n[1] Play \n[2] Highscore \n[3] Exit");
         menuchoicestring = br.readLine();

@@ -8,8 +8,7 @@ public class Highscore {
 
     public static void highscore() throws IOException {
 
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(isr);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         try {
       
@@ -27,10 +26,8 @@ public class Highscore {
 
             System.out.println("Please enter your name.");
             name = br.readLine();
-            System.out.println("Highscore is wip.");
             //write score and name to file in new line (score "by" name)
         }
-
         //sort scores from top to bottom by score and delete everything after line 10
     }
 
