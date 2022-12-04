@@ -12,15 +12,18 @@ public class Highscore {
 
         try {
       
-            File Highscore = new File("2.Kleine Projekte/DoorGame/Highscore.txt");
+            File highscore = new File("2.Kleine Projekte/DoorGame/Highscore.txt");
       
-            if (Highscore.createNewFile()) {} 
+            if (highscore.createNewFile()) {} 
     
         } catch (IOException e) {
     
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        
+        BufferedWriter bwr = new BufferedWriter(new FileWriter("2.Kleine Projekte/DoorGame/Highscore.txt", true));
+        bwr.write("Test");
 
         if (savescore.equals("y") || savescore.equals("yes")) {
 
