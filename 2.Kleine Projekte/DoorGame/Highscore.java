@@ -21,17 +21,14 @@ public class Highscore {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-        
-        BufferedWriter bwr = new BufferedWriter(new FileWriter("2.Kleine Projekte/DoorGame/Highscore.txt", true));
-        bwr.write("Test");
 
         if (savescore.equals("y") || savescore.equals("yes")) {
 
             System.out.println("Please enter your name.");
             name = br.readLine();
-            //write score and name to file in new line (score "by" name)
+            //TODO write score and name to file in new line (score "by" name)
         }
-        //sort scores from top to bottom by score and delete everything after line 10
+        //TODO sort scores from top to bottom by score and delete everything after line 10
     }
 
 }

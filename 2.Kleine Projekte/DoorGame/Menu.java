@@ -30,6 +30,7 @@ public class Menu {
 
                     line = brfile.readLine();
                     System.out.println(line);
+                    //TODO if there are no entries display that there ar no entries
                 }
             
                 System.out.println("\nMenu\n[1] Play \n[2] Top 10 scores \n[3] Exit"); 

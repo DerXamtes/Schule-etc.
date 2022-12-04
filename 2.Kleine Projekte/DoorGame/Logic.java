@@ -31,7 +31,7 @@ public class Logic {
         savescore = br.readLine().toLowerCase();
 
         switch (savescore) {
-            
+
             case "y": case "yes":
             
                 highscore();
