@@ -7,7 +7,7 @@ public class Container {
 
         try {
             
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Maximilian\\OneDrive\\Dokumente\\GitHub\\Privat\\0.Bundeswettbewerb_41\\Container\\Test.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("0.Bundeswettbewerb_41/Container/Test.txt"));
             
             String c = br.readLine();
             int[] zahlen = readFiles("container4.txt");
