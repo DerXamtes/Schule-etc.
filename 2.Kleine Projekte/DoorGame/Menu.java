@@ -51,6 +51,7 @@ public class Menu {
 
                             line = brfile.readLine();
                             System.out.println(line);
+                            //TODO if there are no entries display no entries
                         }
                         System.out.println();
                         menu();
