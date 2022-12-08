@@ -11,10 +11,8 @@ public class Highscore {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         try {
-      
-            File highscore = new File("2.Kleine Projekte/DoorGame/Highscore.txt");
-      
-            if (highscore.createNewFile()) {} 
+            
+            if (highscorefile.createNewFile()) {} 
     
         } catch (IOException e) {
     

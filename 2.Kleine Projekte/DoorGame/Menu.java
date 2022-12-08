@@ -9,8 +9,8 @@ public class Menu {
     public static void menu() throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader brfiletop3 = new BufferedReader(new FileReader("2.Kleine Projekte/DoorGame/Highscore.txt"));
-        BufferedReader brfiletop10 = new BufferedReader(new FileReader("2.Kleine Projekte/DoorGame/Highscore.txt"));
+        BufferedReader brfiletop3 = new BufferedReader(new FileReader(highscorefile));
+        BufferedReader brfiletop10 = new BufferedReader(new FileReader(highscorefile));
 
         System.out.println("Menu\n[1] Play \n[2] Highscore \n[3] Exit");
         menuchoicestring = br.readLine();
@@ -74,13 +74,26 @@ public class Menu {
                         
                         }
 
-                        System.out.println();
-                        menu();
-                        break;
+                        System.out.println("\nDo you want to delete all scores? (y/n)");
+                        delscores = br.readLine().toLowerCase();
+                        System.out.println(" ");
 
+                        switch (delscores) {
+
+                        case "y" : case "yes" :
+
+                            highscorefile.delete();
+                            menu();
+                            break;
+
+                        default:
+
+                            menu();
+                            break;
+                        }
+                        
                     default:
                         
-                        System.out.println("Bye");
                         break;
                 }
 
@@ -88,7 +101,6 @@ public class Menu {
 
             default:
                 
-                System.out.println("Bye");
                 break;
         }
         
