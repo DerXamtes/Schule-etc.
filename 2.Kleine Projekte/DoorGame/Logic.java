@@ -8,7 +8,7 @@ import static DoorGame.Highscore.*;
 public class Logic {
 
     public static String menuchoicestring, userchoicestring, savescore = "no", viewscore, name, line;
-    public static int menuchoice, userchoice, botchoice, score, highscore1, highscore2;
+    public static int menuchoice, userchoice, botchoice, score, highscore;
     public static boolean firstgame = true, topten;
 
     public static void logic() throws IOException {
