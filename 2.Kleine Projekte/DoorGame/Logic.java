@@ -42,6 +42,7 @@ public class Logic {
                 
                 break;
         }
+        
         menu();
     }
     

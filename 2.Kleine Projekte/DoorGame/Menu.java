@@ -3,6 +3,7 @@ package DoorGame;
 import java.io.*;
 
 import static DoorGame.Logic.*;
+import static DoorGame.Highscoremenu.*;
 
 public class Menu {
     
@@ -10,7 +11,6 @@ public class Menu {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedReader brfiletop3 = new BufferedReader(new FileReader(highscorefile));
-        BufferedReader brfiletop10 = new BufferedReader(new FileReader(highscorefile));
 
         System.out.println("Menu\n[1] Play \n[2] Highscore \n[3] Exit");
         menuchoicestring = br.readLine();
@@ -56,41 +56,8 @@ public class Menu {
 
                     case 2:
 
-                        System.out.println("\nTop 10 Scores");
-                        
-                        for (highscore = 0; highscore < 10; highscore++) {
-
-                            line = brfiletop10.readLine();
-                            
-                            if (line != null) {
-                            
-                                System.out.println(line);
-                        
-                            } else {
-
-                                System.out.println("No more scores available");
-                                highscore = 10;
-                            }
-                        
-                        }
-
-                        System.out.println("\nDo you want to delete all scores? (y/n)");
-                        delscores = br.readLine().toLowerCase();
-                        System.out.println(" ");
-
-                        switch (delscores) {
-
-                        case "y" : case "yes" :
-
-                            highscorefile.delete();
-                            menu();
-                            break;
-
-                        default:
-
-                            menu();
-                            break;
-                        }
+                        highscoremenu();
+                        break;
                         
                     default:
                         
@@ -105,7 +72,6 @@ public class Menu {
         }
         
         brfiletop3.close();
-        brfiletop10.close();
     }
 
 }
