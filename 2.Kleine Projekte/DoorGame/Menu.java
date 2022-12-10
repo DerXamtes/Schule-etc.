@@ -10,7 +10,7 @@ public class Menu {
     public static void menu() throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader brfiletop3 = new BufferedReader(new FileReader(highscorefile));
+        BufferedReader brfile = new BufferedReader(new FileReader(highscorefile));
 
         System.out.println("Menu\n[1] Play \n[2] Highscore \n[3] Exit");
         menuchoicestring = br.readLine();
@@ -29,7 +29,7 @@ public class Menu {
                 
                 for (highscore = 0; highscore < 3; highscore++) {
 
-                    line = brfiletop3.readLine();
+                    line = brfile.readLine();
 
                     if (line != null){
                 
@@ -71,7 +71,7 @@ public class Menu {
                 break;
         }
         
-        brfiletop3.close();
+        brfile.close();
     }
 
 }

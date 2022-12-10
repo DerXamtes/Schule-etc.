@@ -10,13 +10,13 @@ public class Highscoremenu {
     public static void highscoremenu() throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader brfiletop10 = new BufferedReader(new FileReader(highscorefile));
+        BufferedReader brfile = new BufferedReader(new FileReader(highscorefile));
                             
         System.out.println("\nTop 10 Scores");
                         
         for (highscore = 0; highscore < 10; highscore++) {
 
-            line = brfiletop10.readLine();
+            line = brfile.readLine();
             
             if (line != null) {
 
@@ -36,18 +36,19 @@ public class Highscoremenu {
 
         switch (delscores) {
 
-        case "y" : case "yes" :
-            highscorefile.delete();
-            menu();
-            break;
+            case "y" : case "yes" :
+                
+                highscorefile.delete();
+                menu();
+                break;
 
-        default:
-            menu();
-            break;
-         
-            
+            default:
+                
+                menu();
+                break;
         }
 
+        brfile.close();
     }
 
 }
