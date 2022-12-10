@@ -12,11 +12,10 @@ public class Highscore {
 
         try {
             
-            if (highscorefile.createNewFile()) {} 
+            highscorefile.createNewFile();
     
         } catch (IOException e) {
     
-            System.out.println("An error occurred.");
             e.printStackTrace();
         }
 

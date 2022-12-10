@@ -24,7 +24,7 @@ public class Menu {
                 break;
             
             case 2:
-
+                
                 System.out.println("\nTop 3 Scores");
                 
                 for (highscore = 0; highscore < 3; highscore++) {
@@ -32,11 +32,11 @@ public class Menu {
                     line = brfiletop3.readLine();
 
                     if (line != null){
-
+                
                         System.out.println(line);
                     
                     } else {
-
+                
                         System.out.println("No more scores available.");
                         highscore = 3;
                     }
@@ -49,13 +49,13 @@ public class Menu {
 
                 switch (menuchoice) {
 
-                    case 1:
-                       
+                    case 1:                       
+                
                         logic();
                         break;
 
                     case 2:
-
+                    
                         highscoremenu();
                         break;
                         

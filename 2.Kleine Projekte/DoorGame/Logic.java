@@ -16,8 +16,8 @@ public class Logic {
         
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        do {
-                        
+        do {   
+            
             System.out.println("Choose a door! \n [1] [2] [3]");
             userchoicestring = br.readLine();
             userchoice = Integer.parseInt(userchoicestring);
@@ -34,7 +34,7 @@ public class Logic {
         switch (savescore) {
 
             case "y": case "yes":
-            
+                
                 highscore();
                 break;
 

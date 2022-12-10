@@ -19,7 +19,7 @@ public class Highscoremenu {
             line = brfiletop10.readLine();
             
             if (line != null) {
-            
+
                 System.out.println(line);
         
             } else {
@@ -27,7 +27,7 @@ public class Highscoremenu {
                 System.out.println("No more scores available");
                 highscore = 10;
             }
-        
+
         }
 
         System.out.println("\nDo you want to delete all scores? (y/n)");
@@ -37,20 +37,17 @@ public class Highscoremenu {
         switch (delscores) {
 
         case "y" : case "yes" :
-
             highscorefile.delete();
             menu();
             break;
 
         default:
-
             menu();
             break;
          
             
         }
 
-        brfiletop10.close();
     }
 
 }
