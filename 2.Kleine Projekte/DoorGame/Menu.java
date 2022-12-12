@@ -72,6 +72,7 @@ public class Menu {
         }
         
         brfile.close();
+        br.close();
     }
 
 }

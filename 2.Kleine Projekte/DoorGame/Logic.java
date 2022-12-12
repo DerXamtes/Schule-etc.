@@ -44,6 +44,7 @@ public class Logic {
         }
         
         menu();
+        br.close();
     }
     
 }
