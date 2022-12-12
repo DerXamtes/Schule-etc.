@@ -13,7 +13,7 @@ public class Highscoremenu {
         BufferedReader brfile = new BufferedReader(new FileReader(highscorefile));
                             
         System.out.println("\nTop 10 Scores");
-                        
+
         for (highscore = 0; highscore < 10; highscore++) {
 
             line = brfile.readLine();
@@ -27,7 +27,7 @@ public class Highscoremenu {
                 System.out.println("No more scores available");
                 highscore = 10;
             }
-            
+
         }
 
         System.out.println("\nDo you want to delete all scores? (y/n)");
@@ -49,6 +49,7 @@ public class Highscoremenu {
         }
 
         brfile.close();
+        br.close();
     }
 
 }
