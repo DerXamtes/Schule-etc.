@@ -4,6 +4,7 @@ import java.io.*;
 
 import static DoorGame.Logic.*;
 import static DoorGame.Menu.*;
+import static DoorGame.Highscore.*;
 
 public class Highscoremenu {
 
@@ -39,23 +40,15 @@ public class Highscoremenu {
 
         System.out.println("\nDo you want to delete all scores? (y/n)");
         delscores = br.readLine().toLowerCase();
-        System.out.println(" ");
+        System.out.println();
 
         switch (delscores) {
 
             case "y" : case "yes" :
                     
-                highscorefile.delete();
-                        
-                try {
-            
-                    highscorefile.createNewFile();
-            
-                } catch (IOException e) {
-            
-                    e.printStackTrace();
-                }
-                
+                delete = true;
+                savescore = "no";
+                highscore();
                 menu();
                 break;
 
@@ -66,7 +59,6 @@ public class Highscoremenu {
         }
 
         brfile.close();
-        br.close();
     }
 
 }

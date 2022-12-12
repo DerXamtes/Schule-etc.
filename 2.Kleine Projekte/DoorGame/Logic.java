@@ -9,7 +9,7 @@ public class Logic {
 
     public static String menuchoicestring, userchoicestring, savescore = "no", viewscore, name, line, delscores;
     public static int menuchoice, userchoice, botchoice, score, highscore;
-    public static boolean firstgame = true, topten;
+    public static boolean firstgame = true, delete;
     public static File highscorefile = new File("2.Kleine Projekte/DoorGame/Highscore.txt");
 
     public static void logic() throws IOException {
