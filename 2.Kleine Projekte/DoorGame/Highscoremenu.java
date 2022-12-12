@@ -27,7 +27,7 @@ public class Highscoremenu {
                 System.out.println("No more scores available");
                 highscore = 10;
             }
-
+            
         }
 
         System.out.println("\nDo you want to delete all scores? (y/n)");
