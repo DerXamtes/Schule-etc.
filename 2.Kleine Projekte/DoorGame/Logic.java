@@ -27,7 +27,6 @@ public class Logic {
         } while (userchoice != botchoice);
 
         System.out.println("Game Over! \nYour score is: " + score);
-        score = 0;
         System.out.println("Do you want to save your score? (y/n)");
         savescore = br.readLine().toLowerCase();
 

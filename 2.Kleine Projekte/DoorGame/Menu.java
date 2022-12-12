@@ -12,6 +12,8 @@ public class Menu {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedReader brfile = new BufferedReader(new FileReader(highscorefile));
 
+        score = 0;
+
         System.out.println("Menu\n[1] Play \n[2] Highscore \n[3] Exit");
         menuchoicestring = br.readLine();
         menuchoice = Integer.parseInt(menuchoicestring);

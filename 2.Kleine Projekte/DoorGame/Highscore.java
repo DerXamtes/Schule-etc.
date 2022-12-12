@@ -23,7 +23,20 @@ public class Highscore {
 
             System.out.println("Please enter your name.");
             name = br.readLine();
-            //TODO write score and name to file in new line (score "by" name)
+                    
+            try {
+            
+                FileWriter fwr = new FileWriter(highscorefile, true);
+
+                fwr.write(score + " by " + name + System.lineSeparator());
+
+                fwr.close();
+
+            } catch (IOException e) {
+
+                e.printStackTrace();
+            }
+
         }
         //TODO sort scores from top to bottom by score and delete everything after line 10
     }
