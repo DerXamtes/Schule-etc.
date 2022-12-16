@@ -22,5 +22,4 @@ public class DoorGame {
         highscore();
         menu();
     }
-
 }

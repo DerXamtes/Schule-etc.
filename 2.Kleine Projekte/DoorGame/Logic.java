@@ -7,8 +7,8 @@ import static DoorGame.Highscore.*;
 
 public class Logic {
 
-    public static String menuchoicestring, userchoicestring, savescore = "no", viewscore, name, line, delscores;
-    public static int menuchoice, userchoice, botchoice, score, highscore;
+    public static String userchoicestring, savescore = "no";
+    public static int menuchoice, userchoice, botchoice, score;
     public static boolean firstgame = true, delete;
     public static File highscorefile = new File("2.Kleine Projekte/DoorGame/Highscore.txt");
 
@@ -44,5 +44,5 @@ public class Logic {
         
         menu();
     }
-    
+
 }
