@@ -9,19 +9,19 @@ import static DoorGame.Menu.*;
 public class Highscore {
 
     public static void highscore() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader bufferedreader = new BufferedReader(new InputStreamReader(System.in));
         List<String> lines = new ArrayList<>();
 
-        try (BufferedReader brfile = new BufferedReader(new FileReader(highscorefile))) {
+        try (BufferedReader bufferedreaderfile = new BufferedReader(new FileReader(highscorefile))) {
             String line;
-            while ((line = brfile.readLine()) != null) {
+            while ((line = bufferedreaderfile.readLine()) != null) {
                 lines.add(line);
             }
         }
 
         if (savescore.equalsIgnoreCase("y") || savescore.equalsIgnoreCase("yes")) {
             System.out.println("Please enter your name.");
-            String name = br.readLine();
+            String name = bufferedreader.readLine();
             lines.add(score + " by " + name);
         }
 

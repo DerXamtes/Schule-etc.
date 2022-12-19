@@ -8,12 +8,13 @@ import static DoorGame.Highscore.*;
 public class Menu {
 
     public static void menu() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader brfile = new BufferedReader(new FileReader(highscorefile));
+        BufferedReader bufferedreader= new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader bufferedreaderfile = new BufferedReader(new FileReader(highscorefile));
+        BufferedReader bufferedreaderfile2 = new BufferedReader(new FileReader(highscorefile));
 
         score = 0;
         System.out.println("Menu\n[1] Play \n[2] Highscore \n[3] Exit");
-        int menuchoice = Integer.parseInt(br.readLine());
+        int menuchoice = Integer.parseInt(bufferedreader.readLine());
 
         try {
             switch (menuchoice) {
@@ -24,7 +25,7 @@ public class Menu {
                     System.out.println("\nTop 3 Scores");
                     String line;
                     int counter = 0;
-                    while ((line = brfile.readLine()) != null && counter < 3) {
+                    while ((line = bufferedreaderfile.readLine()) != null && counter < 3) {
                         System.out.println(line);
                         counter++;
                     }
@@ -35,7 +36,7 @@ public class Menu {
                     }
 
                     System.out.println("\nMenu\n[1] Play \n[2] Top 10 scores \n[3] Exit");
-                    menuchoice = Integer.parseInt(br.readLine());
+                    menuchoice = Integer.parseInt(bufferedreader.readLine());
 
                     switch (menuchoice) {
                         case 1:
@@ -44,9 +45,9 @@ public class Menu {
                         case 2:
                             System.out.println("\nTop 10 Scores");
                             counter = 0;
-                            BufferedReader brfile2 = new BufferedReader(new FileReader(highscorefile));
+                           
                             try {
-                                while ((line = brfile2.readLine()) != null && counter < 10) {
+                                while ((line = bufferedreaderfile2.readLine()) != null && counter < 10) {
                                     System.out.println(line);
                                     counter++;
                                 }
@@ -56,7 +57,7 @@ public class Menu {
                                     System.out.println("No more scores available");
                                 }
                                 System.out.println("\nDo you want to delete all scores? (y/n)");
-                                String delscores = br.readLine().toLowerCase();
+                                String delscores = bufferedreader.readLine().toLowerCase();
                                 System.out.println();
                                 if (delscores.equalsIgnoreCase("y") || delscores.equalsIgnoreCase("yes")) {
                                     delete = true;
@@ -64,7 +65,7 @@ public class Menu {
                                     highscore();
                                 }
                             } finally {
-                                brfile2.close();
+                                bufferedreaderfile2.close();
                             }
                             break;
                     }
@@ -73,8 +74,8 @@ public class Menu {
                     break;
             }
         } finally {
-            br.close();
-            brfile.close();
+            bufferedreader.close();
+            bufferedreaderfile.close();
         }
     }
 }

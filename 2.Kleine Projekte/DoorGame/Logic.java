@@ -13,11 +13,11 @@ public class Logic {
     public static File highscorefile = new File("2.Kleine Projekte/DoorGame/Highscore.txt");
 
     public static void logic() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader bufferedreader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {   
             System.out.println("Choose a door! \n [1] [2] [3]");
-            userchoice = Integer.parseInt(br.readLine());
+            userchoice = Integer.parseInt(bufferedreader.readLine());
             botchoice = (int) (Math.random()*3+1);
             if (userchoice == botchoice) {
                 break;
@@ -27,7 +27,7 @@ public class Logic {
 
         System.out.println("Game Over! \nYour score is: " + score);
         System.out.println("Do you want to save your score? (y/n)");
-        savescore = br.readLine().toLowerCase();
+        savescore = bufferedreader.readLine().toLowerCase();
 
         if (savescore.equalsIgnoreCase("y") || savescore.equalsIgnoreCase("yes")) {
             highscore();
