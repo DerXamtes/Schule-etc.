@@ -18,16 +18,14 @@ public class TestUI {
                 case 'M': arab += 1000; break;
                 
                 default: return -1;
-            }
-    
+            }    
         }
         
         return arab;
     } 
-    
+
     public static void main (String[] args) {
 
         System.out.println(roemischNachArab("XLVIIII"));
     }
-
 }
