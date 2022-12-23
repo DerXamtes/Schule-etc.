@@ -13,7 +13,7 @@ public class BodyMassIndex {
 
         double b = sc.nextDouble();
 
-        System.out.print("Ihr BMI liegt bei: " + a/(b*b));
+        System.out.println("Ihr BMI liegt bei: " + a/(b*b));
 
         sc.close();
         

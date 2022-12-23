@@ -28,7 +28,7 @@ public class Zahlenraten{
             
             } else {
 
-                System.out.print("Zufallszahl: " + zufallszahl + " Rateversuche: " +counter);
+                System.out.println("Zufallszahl: " + zufallszahl + " Rateversuche: " +counter);
             }
             
         }
