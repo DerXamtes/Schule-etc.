@@ -1,4 +1,0 @@
-\babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}lineare Funktionen}{2}{}%
-\contentsline {section}{\numberline {2}zusammengesetzte Aufgabe lineare Funktionen}{2}{}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

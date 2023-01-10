@@ -1,57 +1,258 @@
-\documentclass[a4paper,12pt]{scrartcl}
+\documentclass[a4paper]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
+\usepackage[ngerman]{babel}
 
-\title{Mathearbeit Korrektur}
-\author{Maximilian Ansorg}
-\date{\today}
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage[left=3cm, right=3cm, top=3cm, bottom=2.5cm]{geometry}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=green,
+    pdftitle={Maximilian Ansorg Korrektur Mathearbeit}
+}
+
+\usepackage[headsepline]{scrlayer-scrpage}
+\ihead{\normalfont\sffamily Maximilian Ansorg}
+\chead{\normalfont\sffamily Korrektur Mathearbeit}
+\ohead{\normalfont\sffamily\today}
+\cfoot{\normalfont\sffamily\thepage}
 
 \begin{document}
-\maketitle
+\sffamily
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
-\section{lineare Funktionen}
+\begin{center}
+	\section*{\underline{\textbf {2. Klausur Mathematik Einführungsphase}}}
+\end{center}
+\vspace*{5mm}
 
-\subsection*{a)}
+\subsection*{\textbf{Aufgabe 1: Lineare Funktionen}}
+	\begin{minipage}{0.5\textwidth}
+		\subsubsection*{a)}
+			\begin{align*}
+				f(g)&=-\frac{1}{6}x+3\frac{1}{6} \\
+				f(f)&=\frac{1}{3}x-2
+			\end{align*}
+		\subsubsection*{b)}
+			\begin{align*}
+				h(x)=-2x+4
+			\end{align*}
+	\end {minipage}
+	\begin {minipage}{0.5\textwidth}
+		\subsubsection*{c)}
+			\begin{align*}
+				h(x) &= -2x + 4 \\
+				i(x) &= \frac{1}{2}x + b\\
+				2	 &= \frac{1}{2}	* (-4) + b\\
+				2	 &= -2 + b \\
+				4	 &= b\\
+				i(x) &= \frac{1}{2}x + 4
+			\end{align*}
+	\end{minipage}
+\vspace*{5mm}
 
-\[f(g)=-\frac{1}{6}x+3\frac{1}{6}\]
+\subsection*{\textbf{Aufgabe 2: Zusammengesetzte Aufgabe lineare Funktionen}}
+	\begin{minipage}{1\textwidth}
+		\subsubsection*{a)}
+			Die Gerade $f(x)$ und $h(x)$ sind orthogonal zueinander und schneiden sich in einem Punkt, \\
+			weil $\frac{1}{3} * (-3) = -1$. \\
+			Alle Geraden schneiden sich jeweils in einem Punkt, weil sie eine unterschiedliche Steigungen haben.
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\vspace*{-5mm}
+		\subsubsection*{b)}
+			\begin{align*}
+				f(x) &= g(x) \\
+				\frac{1}{3}x + 1 &= -x \\
+				\frac{4}{3}x + 1 &= 0 \\
+				\frac{4}{3}x &= -1 \\
+				4x &= -3 \\
+				x &= -0,75 
+				S(-0,75 | 0.75) \\
+				m &= \tan(\alpha) \\
+				\alpha &= \tan^{-1}(m) \\
+				\tan^{-1}(\frac{1}{3}) &= 18.43^{\circ} \\
+				\tan^{-1}(-1) &= -45^{\circ}\\
+				63,43^{\circ} &= 18.43^{\circ} -(-45^{\circ}) \\ 
+			\end{align*}
+		\end{minipage}
+		\begin{minipage}{0.5\textwidth}
+			\vspace*{10mm}
+			\subsubsection*{c)}
+				\begin{align*}
+					\text{$P (3|y)$} \\
+					f(x) &= \frac{1}{3}x + 1 \\
+					f(3) &= \frac{1}{3} * 3 + 1 \\
+					f(3) &= 2 \\
+					\text{$P (3|2)$}
+				\end{align*}
+			\subsubsection*{d)}
+			\begin{align*}
+				m &= \tan(\alpha) \\
+				\tan(20^{\circ}) &= 0,364\\
+				k(x) &= 0,364x \\ 
+			\end{align*}
+			\subsubsection*{e)}
+				\[k(3)= 1,091 \] \\
+				\hspace*{10mm}
+				\text{Punkt liegt nicht auf der Geraden}
+		\end{minipage}
+	\clearpage
 
-\[f(f)=\frac{1}{3}x-2\]
+\subsection*{\textbf{Aufgabe 3: Quadratische Funktionen}}
+	\begin{figure}[h]
+		\begin{minipage}{0\textwidth}
+			\begin{align*}	
+				\text{a)	}\
+				\text{Scheitelpunktgform: }f(x) &= (x - 2)^{2} - 1 \\	
+				\text{Linearfaktorform: } f(x) &= 1(x - 1)(x - 3)	\\ 
+			\end{align*}
+		\end{minipage}
+		\begin{minipage}{0\textwidth}
+			\begin{align*}
+				\text{b)	} \
+				2 &= a * (-1)^{2} + b * (-1) + c \\
+				5 &= a * (-1)^{2} + b * (2)  + c \\
+				-1 &= a * (0,5)^{2} + b * (0,5) + c\\ \\
+			\end{align*}
+		\end{minipage}
+		\begin{minipage}{0.5\textwidth}
+			\begin{align*}
+				x &= 2 \\
+				y &= -1 \\ 
+				z &= -1 \\
+				g(x) &= 2x^{2} - 1x -1\\
+			\end{align*}
+		\end{minipage}
+		\begin{minipage}{0\textwidth}
+			\begin{align*}
+				\text{c)	}\
+				g(x) &= 2x^{2} - 1x -1\\
+				xs &= \frac{b}{2 * a} \\
+				xs &= \frac{1}{2 * 2} \\
+				xs &= \frac{1}{4}
+			\end{align*}
+		\end{minipage}
+		\begin{minipage}{0.5\textwidth}
+			\begin{align*}
+				ys &=  2 * (\frac{1}{4})^{2} - 1(\frac{1}{4}) - 1 \\
+				ys &= -\frac{9}{8} \\ \\
+				g(x) &= 2 (x - \frac{1}{4}) - \frac{9}{8} \\
+			\end{align*}
+		\end{minipage}
+		\begin{minipage}{0\textwidth}
+			\begin{align*}
+				\text{d)	}\
+				h(x) &= -2(x - 1)(x + 2)\\
+				x_{1}&= -1 \\
+				x_{2}&= 2 \\
+			\end{align*}
+		\end{minipage}
+	\end{figure}
+	\begin{figure}
+		\begin{minipage}{0\textwidth}
+			\begin{align*}
+				\text{e)	}\
+				x_{1/2} &= -\frac{p}{2} \pm\sqrt{(\frac{p}{2})^{2} - q} \\
+				x_{1/2} &= \frac{0,5}{2} \pm\sqrt{(\frac{0,5}{2})^{2} + 0,5} \\
+				x_{1/2} &= \frac{1}{4} \pm \frac{3}{4} \\
+				x_{1} &= \frac{1}{4} + \frac{3}{4} = 1 \\
+				x_{2} &= \frac{1}{4} - \frac{3}{4} = -\frac{1}{2} \\
+			\end{align*}
+			\begin{align*}
+				\text{f)	}\
+				g(x) &= 2x^{2} - 1x - 1 \\
+				t(x) &= 2x - 1 \\
+				t(x)&= g(x) \\
+				2x - 1&=2x^{2} - 1x - 1 \\
+				0 &= 2x^{2} - 3x \\
+				\text{TR: } \\
+				x_{1} &= \frac{3}{2} \\
+				x_{2} &= 0 
+			\end{align*}
+			\begin{align*}
+				\text{g)	}\
+				f(x) &= 2x^{2} + 6x - 1 \\
+				g(x) &= 2x^{2} \\
+			\end{align*}
+				\text{Verschiebung y- Achse = +5,5} \\
+				\text{Verschiebung x- Achse = +1,5} \\
+		\end{minipage}
+	\end{figure}
+\clearpage
+\newpage
 
-\subsection*{b)}
-
-\[f(x)=-2x+4\]
-
-\subsection*{c)}
-
-\[f(x=0,5x+4\]
-
-\section{zusammengesetzte Aufgabe lineare Funktionen}
-
-\subsection*{a)}
-\subsection*{b)}
-\subsection*{c)}
-\subsection*{d)}
-\subsection*{e)}
-
-\section{quadratische Funktionen}
-
-\subsection*{a)}
-\subsection*{b)}
-\subsection*{c)}
-\subsection*{d)}
-\subsection*{e)}
-\subsection*{f)}
-\subsection*{g)}
-
-\section{Klippenspringen}
-
-\subsection*{a)}
-\subsection*{b)}
-\subsection*{c)}
-\subsection*{d)}
-
+\subsection*{\textbf{Aufgabe 4: Klippenspringen}}
+	\begin{figure}[h]
+		\begin{minipage}{0\textwidth}
+				\text{a)	}\
+				\begin{tikzpicture}
+					\begin{axis}[
+						xmin=0, xmax=8,
+						ymin=0, ymax=30,
+						xtick={0,1,...,8},
+						ytick={0,5,...,30},
+						xlabel=$x$,
+						ylabel=$y$,
+						grid=both,
+						grid style={line width=.1pt, draw=gray!10},
+						major grid style={line width=.2pt,draw=gray!50},
+						]
+						
+						\addplot[
+						domain=0:8,
+						samples=100,
+						color=red,
+						] {-x^2 + 2*x + 27};
+						
+						\draw[blue, thick] (1,28) -- (1,0);
+						\draw[blue, thick] (-1,0) -- (-1,1);
+						\draw[blue, thick] (5,0) -- (5,1);
+						\node[blue] at (1,28) {$(1,28)$};
+						\node[blue] at (-1,0) {$(-1,0)$};
+						\node[blue] at (5,0) {$(5,0)$};							
+					\end{axis}						
+			\end{tikzpicture}
+		\end{minipage}
+	\end{figure}
+	\begin{figure}[h]
+		\begin{minipage}{0\textwidth}
+			\begin{align*}
+				\text{b)	}\
+				h(x) &= -0^{2} -0 * 2 + 27 \\
+			\end{align*}
+			\text{27 Meter}
+		\end{minipage}
+		\begin{minipage}{0.5\textwidth}
+			\begin{align*}
+				\text{c)	} \
+				S(1 | 28 ) \\
+			\end{align*}
+			\hspace{25mm}
+			\text{28 Meter}
+		\end{minipage}	
+		\begin{minipage}{0\textwidth}
+			\begin{align*}
+				\text{d)	}\
+				h(x) &= x^{2} + 2x + 27 \\
+				&= x^{2} - 2x -27 \\
+				x_{1/2} &= -\frac{2}{2} \pm\sqrt{(\frac{-2}{2})^{2}+27} \\
+				x_{1} &= 6,291 \\
+				x_{2} &= -4,292 \\
+			\end{align*}
+			\text{Sie spring 6,292 Meter weit}
+		\end{minipage}
+	\end{figure}
+\clearpage
 \end{document}
